@@ -13,6 +13,9 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.SaveSystem;
 using System;
 using TaleWorlds.Engine;
+using MCM.Abstractions.Attributes;
+using MCM.Abstractions.Attributes.v2;
+using MCM.Abstractions.Base.Global;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
@@ -104,7 +107,7 @@ namespace VisibleSmithingStaminaWhileWaiting
             {
                 InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
                 
-                MBInformationManager.AddQuickInformation(new TextObject(_message), 1000, null, "");
+                MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "");
 
                 Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
 
@@ -121,8 +124,7 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             this._onInspect = delegate ()
             {
-                // some action on mouse-click on the notification
-                SoundEvent.PlaySound2D("event:/ui/notification/quest_start"); // example
+                SoundEvent.PlaySound2D("event:/ui/notification/quest_start");
             };
         }
     }
@@ -136,7 +138,7 @@ namespace VisibleSmithingStaminaWhileWaiting
         {
             get
             {
-                return new TextObject("Smithing stamina is 100%"); // not sure where this is used
+                return new TextObject("Smithing stamina is 100%");
             }
         }
 
@@ -144,7 +146,7 @@ namespace VisibleSmithingStaminaWhileWaiting
         {
             get
             {
-                return "event:/ui/notification/kingdom_decision";   // play this sound on popup
+                return "event:/ui/notification/kingdom_decision";
             }
         }
     }
@@ -169,6 +171,11 @@ namespace VisibleSmithingStaminaWhileWaiting
         {
             base.AddClassDefinition(typeof(CustomSmithingStaminaMapNotification), 1);
         }
+
+    }
+
+    public class UsefulSkipsSettings : AttributeGlobalSettings<UsefulSkipsSettings>
+    {
 
     }
 }
