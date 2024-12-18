@@ -1,13 +1,16 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using HarmonyLib;
+using StoryMode;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
 
-namespace SmithingStaminaDisplayedWhileWaiting
+namespace VisibleSmithingStaminaWhileWaiting
 {
     public class SubModule : MBSubModuleBase
     {
@@ -37,11 +40,11 @@ namespace SmithingStaminaDisplayedWhileWaiting
             if (flag)
             {
                 CampaignGameStarter campaignGameStarter = (CampaignGameStarter)gameStarterObject;
-                campaignGameStarter.AddBehavior(new SSDWhileWaiting());
+                campaignGameStarter.AddBehavior(new VSSWhileWaiting());
             }
         }
 
-        public class SSDWhileWaiting : CampaignBehaviorBase
+        public class VSSWhileWaiting : CampaignBehaviorBase
         {
             public override void RegisterEvents()
             {
@@ -54,6 +57,7 @@ namespace SmithingStaminaDisplayedWhileWaiting
             }
 
             private bool _canStaminaMessageBeDisplayed = false;
+            private string _message = "Main hero stamina reached 100%";
 
             private void HourlyTick()
             {
@@ -92,7 +96,12 @@ namespace SmithingStaminaDisplayedWhileWaiting
 
             private void DisplayStaminaMessage()
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject("Main hero stamina reached 100%").ToString()));
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
+                
+                MBInformationManager.AddQuickInformation(new TextObject(_message), 1000, null, "");
+
+                // Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new ConspiracyQuestMapNotification(this, this.SideNotificationText));
+
                 SetMessageToBeDisplayed(false);
             }
         }
