@@ -1,0 +1,5 @@
+﻿<Config>
+    <SpriteCategory Name="ui_visible_smithing_stamina_while_waiting">
+        <AlwaysLoad/>
+    </SpriteCategory>
+</Config>
