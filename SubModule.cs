@@ -1,13 +1,18 @@
-﻿using HarmonyLib;
-using StoryMode;
+﻿using System.Collections.Generic;
+using System.Reflection;
+using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.CampaignSystem.ViewModelCollection.Map.MapNotificationTypes;
+using TaleWorlds.CampaignSystem.ViewModelCollection.Map;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-using TaleWorlds.LinQuick;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.SaveSystem;
+using System;
+using TaleWorlds.Engine;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
@@ -17,7 +22,8 @@ namespace VisibleSmithingStaminaWhileWaiting
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-
+            Harmony harmony = new Harmony("visible_smithing_stamina_while_waiting");
+            harmony.PatchAll();
         }
 
         protected override void OnSubModuleUnloaded()
@@ -100,10 +106,69 @@ namespace VisibleSmithingStaminaWhileWaiting
                 
                 MBInformationManager.AddQuickInformation(new TextObject(_message), 1000, null, "");
 
-                // Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new ConspiracyQuestMapNotification(this, this.SideNotificationText));
+                Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
 
                 SetMessageToBeDisplayed(false);
             }
         }
+    }
+
+    public class CustomSmithingStaminaMapNotificationVM : MapNotificationItemBaseVM
+    {
+        public CustomSmithingStaminaMapNotificationVM(CustomSmithingStaminaMapNotification data) : base(data)
+        {
+            base.NotificationIdentifier = "custom_smithing_stamina_map_notification";
+
+            this._onInspect = delegate ()
+            {
+                // some action on mouse-click on the notification
+                SoundEvent.PlaySound2D("event:/ui/notification/quest_start"); // example
+            };
+        }
+    }
+
+
+    public class CustomSmithingStaminaMapNotification : InformationData
+    {
+        public CustomSmithingStaminaMapNotification(TextObject description) : base(description) { }
+
+        public override TextObject TitleText
+        {
+            get
+            {
+                return new TextObject("Smithing stamina is 100%"); // not sure where this is used
+            }
+        }
+
+        public override string SoundEventPath
+        {
+            get
+            {
+                return "event:/ui/notification/kingdom_decision";   // play this sound on popup
+            }
+        }
+    }
+
+
+    [HarmonyPatch(typeof(MapNotificationVM), "PopulateTypeDictionary")]
+    internal class PopulateNotificationsPatch
+    {
+        private static void Postfix(MapNotificationVM __instance)
+        {
+            Dictionary<Type, Type> dic = (Dictionary<Type, Type>)__instance.GetType().GetField("_itemConstructors", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance);
+            dic.Add(typeof(CustomSmithingStaminaMapNotification), typeof(CustomSmithingStaminaMapNotificationVM));
+        }
+    }
+
+
+    public class CustomSaveDefiner : SaveableTypeDefiner
+    {
+        public CustomSaveDefiner() : base(130572221) { }
+
+        protected override void DefineClassTypes()
+        {
+            base.AddClassDefinition(typeof(CustomSmithingStaminaMapNotification), 1);
+        }
+
     }
 }
