@@ -16,6 +16,10 @@ using TaleWorlds.Engine;
 using MCM.Abstractions.Base.Global;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Attributes;
+using TaleWorlds.CampaignSystem.Encounters;
+using TaleWorlds.CampaignSystem.Actions;
+using TaleWorlds.CampaignSystem.GameMenus;
+using TaleWorlds.CampaignSystem.Party;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
@@ -107,7 +111,7 @@ namespace VisibleSmithingStaminaWhileWaiting
                     InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
 
                 if (AttributeGlobalSettings<Settings>.Instance.ShowMessageOnTheScreen)
-                    MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "");
+                    MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "event:/ui/notification/quest_start");
 
                 if (AttributeGlobalSettings<Settings>.Instance.ShowMessageAsPopUp)
                     Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
@@ -193,17 +197,18 @@ namespace VisibleSmithingStaminaWhileWaiting
             }
         }
 
-        [SettingPropertyBool("Log message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message in the log.")]
-        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        [SettingPropertyBool("Log message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message in the log in the bottom left corner of the screen.")]
+        [SettingPropertyGroup("Select how you want your smithing stamina message to be shown", GroupOrder = 0)]
         public bool ShowMessageInTheLog { get; set; } = true;
 
         [SettingPropertyBool("Middle screen message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message in the middle of the screen.")]
-        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        [SettingPropertyGroup("Select how you want your smithing stamina message to be shown", GroupOrder = 0)]
         public bool ShowMessageOnTheScreen { get; set; } = true;
 
-        [SettingPropertyBool("Popup message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message as a round pop up.")]
-        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        [SettingPropertyBool("Popup message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message as a round pop up on the right side of the screen.")]
+        [SettingPropertyGroup("Select how you want your smithing stamina message to be shown", GroupOrder = 0)]
         public bool ShowMessageAsPopUp { get; set; } = true;
     }
     
+
 }
