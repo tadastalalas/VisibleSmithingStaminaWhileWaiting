@@ -13,9 +13,9 @@ using TaleWorlds.MountAndBlade;
 using TaleWorlds.SaveSystem;
 using System;
 using TaleWorlds.Engine;
-using MCM.Abstractions.Attributes;
-using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
+using MCM.Abstractions.Attributes.v2;
+using MCM.Abstractions.Attributes;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
@@ -32,13 +32,11 @@ namespace VisibleSmithingStaminaWhileWaiting
         protected override void OnSubModuleUnloaded()
         {
             base.OnSubModuleUnloaded();
-
         }
 
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
-
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
@@ -105,11 +103,14 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             private void DisplayStaminaMessage()
             {
-                InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
-                
-                MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "");
+                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageInTheLog)
+                    InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
 
-                Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
+                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageOnTheScreen)
+                    MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "");
+
+                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageAsPopUp)
+                    Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
 
                 SetMessageToBeDisplayed(false);
             }
@@ -173,9 +174,36 @@ namespace VisibleSmithingStaminaWhileWaiting
         }
 
     }
-
-    public class UsefulSkipsSettings : AttributeGlobalSettings<UsefulSkipsSettings>
+    
+    internal class Settings : AttributeGlobalSettings<Settings>
     {
+        public override string Id
+        {
+            get
+            {
+                return "VisibleSmithingStaminaWhileWaiting";
+            }
+        }
 
+        public override string DisplayName
+        {
+            get
+            {
+                return "Visible Smithing Stamina While Waiting";
+            }
+        }
+
+        [SettingPropertyBool("Log message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message in the log.")]
+        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        public bool ShowMessageInTheLog { get; set; } = true;
+
+        [SettingPropertyBool("Middle screen message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message in the middle of the screen.")]
+        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        public bool ShowMessageOnTheScreen { get; set; } = true;
+
+        [SettingPropertyBool("Popup message", Order = 0, RequireRestart = false, HintText = "Show smithing stamina message as a round pop up.")]
+        [SettingPropertyGroup("Group", GroupOrder = 0)]
+        public bool ShowMessageAsPopUp { get; set; } = true;
     }
+    
 }
