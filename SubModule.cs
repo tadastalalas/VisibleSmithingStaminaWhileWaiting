@@ -16,10 +16,6 @@ using TaleWorlds.Engine;
 using MCM.Abstractions.Base.Global;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Attributes;
-using TaleWorlds.CampaignSystem.Encounters;
-using TaleWorlds.CampaignSystem.Actions;
-using TaleWorlds.CampaignSystem.GameMenus;
-using TaleWorlds.CampaignSystem.Party;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
