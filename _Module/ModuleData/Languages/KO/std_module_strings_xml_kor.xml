@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="한국어" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="기다리는 동안 보이는 스미싱 스태미나" />
+		<string id="Zqsbdz6MIc9Ex" text="주인공 체력이 100%에 도달했습니다." />
+		<string id="OcXCbctwrryDV" text="대장간 체력 알림을 표시할 방법을 선택하세요:" />
+		<string id="2wemouR6uduxG" text="추가 옵션:" />
+		<string id="PDnUz0EnsVJyH" text="이벤트 로그 알림" />
+		<string id="3UWpkfOEaAIzL" text="화면 왼쪽 하단에 있는 로그에 대장간 체력 알림을 표시합니다." />
+		<string id="4gwYs6wqtoMx9" text="중간 화면 알림" />
+		<string id="F4b8RhAxgtqAy" text="화면 중앙 상단에 대장간 체력 알림을 표시합니다." />
+		<string id="W9KhHjSq0EHDc" text="라운드 팝업 알림" />
+		<string id="wY5QrbROdk7M5" text="화면 오른쪽에 라운드 팝업으로 대장간 체력 알림을 표시합니다." />
+		<string id="GK78CZFIe9Dti" text="스태미나가 가득 찰 때까지 기다리지 마세요." />
+		<string id="yOQyJJBraA767" text="주인공의 체력이 100%에 도달하면 영웅은 대기를 멈춥니다." />
+		<string id="sO6sGMmSdvZQW" text="여행 중 체력을 재생하세요" />
+		<string id="Z1K0iP4UAKq6c" text="모든 영웅 파티원의 대장장이 체력이 여행 중에 재생성됩니다. 3일 = 체력 100%." />
+		<string id="6qMBxn8agWxK2" text="여행 중 알림 표시" />
+		<string id="zCzem6NK44Yde" text="영웅이 여행하는 동안 대장장이 체력 회복 알림을 표시합니다. 이 기능을 사용하려면 [여행하는 동안 체력 재생] 옵션이 활성화되어야 합니다." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Français" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Endurance visible de forge pendant l'attente" />
+		<string id="Zqsbdz6MIc9Ex" text="L'endurance du héros principal a atteint 100 %" />
+		<string id="OcXCbctwrryDV" text="Sélectionnez la manière dont vous souhaitez que vos notifications d'endurance de forge soient affichées :" />
+		<string id="2wemouR6uduxG" text="Options supplémentaires :" />
+		<string id="PDnUz0EnsVJyH" text="Notification du journal des événements" />
+		<string id="3UWpkfOEaAIzL" text="Afficher la notification d'endurance de forge dans le journal dans le coin inférieur gauche de l'écran." />
+		<string id="4gwYs6wqtoMx9" text="Notification sur l'écran central" />
+		<string id="F4b8RhAxgtqAy" text="Afficher la notification d'endurance de forge dans la partie supérieure centrale de l'écran." />
+		<string id="W9KhHjSq0EHDc" text="Notification contextuelle ronde" />
+		<string id="wY5QrbROdk7M5" text="Afficher la notification d'endurance de forge sous forme de fenêtre contextuelle sur le côté droit de l'écran." />
+		<string id="GK78CZFIe9Dti" text="Arrêtez d'attendre lorsque votre endurance est pleine" />
+		<string id="yOQyJJBraA767" text="Le héros arrêtera d'attendre lorsque l'endurance du héros principal atteindra 100 %." />
+		<string id="sO6sGMmSdvZQW" text="Régénérer son endurance en voyageant" />
+		<string id="Z1K0iP4UAKq6c" text="Tous les membres du groupe de héros régénéreront leur endurance de forge pendant leur voyage. 3 jours = 100 % d'endurance." />
+		<string id="6qMBxn8agWxK2" text="Afficher les notifications pendant le voyage" />
+		<string id="zCzem6NK44Yde" text="Afficher les notifications de récupération d'endurance de forge pendant que le héros voyage. L'option [Régénérer l'endurance pendant le voyage] doit être activée pour que cela fonctionne." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

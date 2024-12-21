@@ -129,8 +129,8 @@
       <BrushLayer Name="kingdomdestroyed" Sprite="SPGeneral\MapNotification\notification_illustration_kingdom_destroyed" IsHidden="true" />
       <BrushLayer Name="alley_leader_died" Sprite="SPGeneral\MapNotification\notification_illustration_back_alley" IsHidden="true" />
       <BrushLayer Name="alley_under_attack" Sprite="SPGeneral\MapNotification\notification_illustration_back_alley" IsHidden="true" />
-	  
-	        <!-- Captivity Events compatibility -->
+
+	  <!-- Captivity Events compatibility -->
       <BrushLayer Name="cecaptor" Sprite="CEEventNotification\notification_captor" IsHidden="true" />
       <BrushLayer Name="ceevent" Sprite="CEEventNotification\notification_event" IsHidden="true" />
       <!-- ============================= -->
@@ -146,6 +146,7 @@
       <!-- Visible Smithing Stamina While Waiting (this mod) -->
       <BrushLayer Name="custom_smithing_stamina_map_notification" Sprite="custom_smithing_stamina_map_notification_sprite" IsHidden="true" />
       <!-- ============================= -->
+
     </Layers>
     <Styles>
       <Style Name="Default">

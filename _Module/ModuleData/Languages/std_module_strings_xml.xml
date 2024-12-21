@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="English" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Visible Smithing Stamina While Waiting" />
+		<string id="Zqsbdz6MIc9Ex" text="Main hero stamina reached 100%" />
+		<string id="OcXCbctwrryDV" text="Select how you want your smithing stamina notifications to be shown:" />
+		<string id="2wemouR6uduxG" text="Additional options:" />
+		<string id="PDnUz0EnsVJyH" text="Event log notification" />
+		<string id="3UWpkfOEaAIzL" text="Show smithing stamina notification in the log in the bottom-left corner of the screen." />
+		<string id="4gwYs6wqtoMx9" text="Middle screen notification" />
+		<string id="F4b8RhAxgtqAy" text="Show smithing stamina notification in the top-middle part of the screen." />
+		<string id="W9KhHjSq0EHDc" text="Round popup notification" />
+		<string id="wY5QrbROdk7M5" text="Show smithing stamina notification as a round pop up on the right side of the screen." />
+		<string id="GK78CZFIe9Dti" text="Stop waiting when stamina is full" />
+		<string id="yOQyJJBraA767" text="Hero will stop waiting when main hero stamina reaches 100%." />
+		<string id="sO6sGMmSdvZQW" text="Regenerate stamina while travelling" />
+		<string id="Z1K0iP4UAKq6c" text="All hero party members will regenerate smithing stamina while travelling. 3 days = 100% stamina." />
+		<string id="6qMBxn8agWxK2" text="Show notifications while travelling" />
+		<string id="zCzem6NK44Yde" text="Show smithing stamina recovery notifications while hero is travelling. [Regen stamina while travelling] option must be enabled for this to work." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

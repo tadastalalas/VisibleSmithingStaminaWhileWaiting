@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Türkçe" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Beklerken Görünür Demircilik Dayanıklılığı" />
+		<string id="Zqsbdz6MIc9Ex" text="Ana kahraman dayanıklılığı %100'e ulaştı" />
+		<string id="OcXCbctwrryDV" text="Demircilik dayanıklılığı bildirimlerinizin nasıl gösterilmesini istediğinizi seçin:" />
+		<string id="2wemouR6uduxG" text="Ek seçenekler:" />
+		<string id="PDnUz0EnsVJyH" text="Olay günlüğü bildirimi" />
+		<string id="3UWpkfOEaAIzL" text="Ekranın sol alt köşesindeki günlükte demircilik dayanıklılığı bildirimini göster." />
+		<string id="4gwYs6wqtoMx9" text="Orta ekran bildirimi" />
+		<string id="F4b8RhAxgtqAy" text="Ekranın üst orta kısmında demircilik dayanıklılığı bildirimini göster." />
+		<string id="W9KhHjSq0EHDc" text="Yuvarlak açılır bildirim" />
+		<string id="wY5QrbROdk7M5" text="Ekranın sağ tarafında demircilik dayanıklılığı bildirimini yuvarlak bir açılır pencere olarak göster." />
+		<string id="GK78CZFIe9Dti" text="Dayanıklılık dolduğunda beklemeyi bırakın" />
+		<string id="yOQyJJBraA767" text="Ana kahramanın dayanıklılığı %100'e ulaştığında kahraman beklemeyi bırakacaktır." />
+		<string id="sO6sGMmSdvZQW" text="Seyahat ederken dayanıklılığınızı yenileyin" />
+		<string id="Z1K0iP4UAKq6c" text="Tüm kahraman grubu üyeleri seyahat ederken demircilik dayanıklılıklarını yenileyecekler. 3 gün = %100 dayanıklılık." />
+		<string id="6qMBxn8agWxK2" text="Seyahat ederken bildirimleri göster" />
+		<string id="zCzem6NK44Yde" text="Kahraman seyahat ederken demircilik dayanıklılığının geri kazanılması bildirimlerini göster. Bunun çalışması için [Seyahat ederken dayanıklılığı yenile] seçeneğinin etkinleştirilmesi gerekir." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

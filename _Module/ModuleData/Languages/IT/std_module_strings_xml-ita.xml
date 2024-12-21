@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Italiano" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Resistenza visibile alla forgiatura durante l'attesa" />
+		<string id="Zqsbdz6MIc9Ex" text="La resistenza dell'eroe principale ha raggiunto il 100%" />
+		<string id="OcXCbctwrryDV" text="Seleziona come desideri che vengano visualizzate le notifiche relative alla resistenza della forgiatura:" />
+		<string id="2wemouR6uduxG" text="Opzioni aggiuntive:" />
+		<string id="PDnUz0EnsVJyH" text="Notifica del registro eventi" />
+		<string id="3UWpkfOEaAIzL" text="Mostra la notifica relativa alla resistenza della forgiatura nel registro nell'angolo in basso a sinistra dello schermo." />
+		<string id="4gwYs6wqtoMx9" text="Notifica schermata centrale" />
+		<string id="F4b8RhAxgtqAy" text="Mostra la notifica relativa alla resistenza della forgiatura nella parte centrale superiore dello schermo." />
+		<string id="W9KhHjSq0EHDc" text="Notifica popup rotonda" />
+		<string id="wY5QrbROdk7M5" text="Mostra la notifica della resistenza della forgiatura come un pop-up circolare sul lato destro dello schermo." />
+		<string id="GK78CZFIe9Dti" text="Smetti di aspettare quando la resistenza è al massimo" />
+		<string id="yOQyJJBraA767" text="L'eroe smetterà di aspettare quando la resistenza dell'eroe principale raggiungerà il 100%." />
+		<string id="sO6sGMmSdvZQW" text="Rigenera la resistenza durante il viaggio" />
+		<string id="Z1K0iP4UAKq6c" text="Tutti i membri del gruppo di eroi rigenereranno la resistenza della forgiatura durante il viaggio. 3 giorni = 100% di resistenza." />
+		<string id="6qMBxn8agWxK2" text="Mostra notifiche durante il viaggio" />
+		<string id="zCzem6NK44Yde" text="Mostra le notifiche di recupero della resistenza della forgiatura mentre l'eroe è in viaggio. L'opzione [Rigenera resistenza durante il viaggio] deve essere abilitata affinché funzioni." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

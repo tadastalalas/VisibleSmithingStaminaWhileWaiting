@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="日本語" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="待機中の鍛冶スタミナの表示" />
+		<string id="Zqsbdz6MIc9Ex" text="メインヒーローのスタミナが100%に到達" />
+		<string id="OcXCbctwrryDV" text="鍛冶スタミナ通知の表示方法を選択します:" />
+		<string id="2wemouR6uduxG" text="追加オプション:" />
+		<string id="PDnUz0EnsVJyH" text="イベントログ通知" />
+		<string id="3UWpkfOEaAIzL" text="画面の左下隅のログに鍛冶スタミナ通知を表示します。" />
+		<string id="4gwYs6wqtoMx9" text="中央画面の通知" />
+		<string id="F4b8RhAxgtqAy" text="画面の上部中央に鍛冶スタミナ通知を表示します。" />
+		<string id="W9KhHjSq0EHDc" text="ラウンドポップアップ通知" />
+		<string id="wY5QrbROdk7M5" text="鍛冶スタミナ通知をラウンドポップアップとして画面の右側に表示します。" />
+		<string id="GK78CZFIe9Dti" text="スタミナが満タンになったら待つのをやめましょう" />
+		<string id="yOQyJJBraA767" text="メインヒーローのスタミナが 100% に達すると、ヒーローは待機を停止します。" />
+		<string id="sO6sGMmSdvZQW" text="旅行中にスタミナを回復する" />
+		<string id="Z1K0iP4UAKq6c" text="ヒーロー パーティのメンバー全員は、移動中に鍛冶スタミナを回復します。3 日 = 100% スタミナ。" />
+		<string id="6qMBxn8agWxK2" text="旅行中に通知を表示する" />
+		<string id="zCzem6NK44Yde" text="ヒーローが移動中に鍛冶スタミナ回復通知を表示します。これを機能させるには、[移動中にスタミナを回復] オプションを有効にする必要があります。" />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

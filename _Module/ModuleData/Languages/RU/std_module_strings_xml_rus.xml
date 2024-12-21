@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Русский" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Видимая выносливость кузнечного дела во время ожидания" />
+		<string id="Zqsbdz6MIc9Ex" text="Выносливость главного героя достигла 100%" />
+		<string id="OcXCbctwrryDV" text="Выберите, как вы хотите видеть уведомления о выносливости кузнеца:" />
+		<string id="2wemouR6uduxG" text="Дополнительные возможности:" />
+		<string id="PDnUz0EnsVJyH" text="Уведомление журнала событий" />
+		<string id="3UWpkfOEaAIzL" text="Показывать уведомление о выносливости кузнеца в журнале в левом нижнем углу экрана." />
+		<string id="4gwYs6wqtoMx9" text="Уведомление на среднем экране" />
+		<string id="F4b8RhAxgtqAy" text="Показывать уведомление о выносливости кузнеца в верхней средней части экрана." />
+		<string id="W9KhHjSq0EHDc" text="Круглое всплывающее уведомление" />
+		<string id="wY5QrbROdk7M5" text="Показывать уведомление о выносливости кузнеца в виде круглого всплывающего окна в правой части экрана." />
+		<string id="GK78CZFIe9Dti" text="Хватит ждать, когда выносливость будет полной" />
+		<string id="yOQyJJBraA767" text="Герой перестанет ждать, когда выносливость основного героя достигнет 100%." />
+		<string id="sO6sGMmSdvZQW" text="Восстанавливайте выносливость во время путешествия" />
+		<string id="Z1K0iP4UAKq6c" text="Все члены отряда героев будут восстанавливать выносливость кузнечного дела во время путешествия. 3 дня = 100% выносливости." />
+		<string id="6qMBxn8agWxK2" text="Показывать уведомления во время путешествия" />
+		<string id="zCzem6NK44Yde" text="Показывать уведомления о восстановлении выносливости кузнеца, пока герой путешествует. Для работы этого параметра необходимо включить опцию [Восстанавливать выносливость во время путешествия]." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

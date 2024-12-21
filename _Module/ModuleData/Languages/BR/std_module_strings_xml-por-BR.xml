@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Português (BR)" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Vigor de ferraria visível enquanto espera" />
+		<string id="Zqsbdz6MIc9Ex" text="A resistência do herói principal atingiu 100%" />
+		<string id="OcXCbctwrryDV" text="Selecione como você quer que suas notificações de resistência de ferreiro sejam mostradas:" />
+		<string id="2wemouR6uduxG" text="Opções adicionais:" />
+		<string id="PDnUz0EnsVJyH" text="Notificação de log de eventos" />
+		<string id="3UWpkfOEaAIzL" text="Exibir notificação de resistência de ferraria no registro no canto inferior esquerdo da tela." />
+		<string id="4gwYs6wqtoMx9" text="Middle screen notification" />
+		<string id="F4b8RhAxgtqAy" text="Exibir notificação de resistência de ferraria na parte superior central da tela." />
+		<string id="W9KhHjSq0EHDc" text="Notificação pop-up redonda" />
+		<string id="wY5QrbROdk7M5" text="Exibir notificação de resistência de ferreiro como um pop-up redondo no lado direito da tela." />
+		<string id="GK78CZFIe9Dti" text="Pare de esperar quando a resistência estiver cheia" />
+		<string id="yOQyJJBraA767" text="O herói parará de esperar quando a resistência do herói principal atingir 100%." />
+		<string id="sO6sGMmSdvZQW" text="Regenera a resistência enquanto viaja" />
+		<string id="Z1K0iP4UAKq6c" text="Todos os membros do grupo de heróis regenerarão a resistência de ferraria enquanto viajam. 3 dias = 100% de resistência." />
+		<string id="6qMBxn8agWxK2" text="Mostrar notificações enquanto viaja" />
+		<string id="zCzem6NK44Yde" text="Exibir notificações de recuperação de resistência de ferreiro enquanto o herói estiver viajando. A opção [Regenerar resistência enquanto viaja] deve estar habilitada para que isso funcione." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

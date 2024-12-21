@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Polski" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Widoczna wytrzymałość kowalska podczas oczekiwania" />
+		<string id="Zqsbdz6MIc9Ex" text="Wytrzymałość głównego bohatera osiągnęła 100%" />
+		<string id="OcXCbctwrryDV" text="Wybierz sposób wyświetlania powiadomień o wytrzymałości kowalskiej:" />
+		<string id="2wemouR6uduxG" text="Opcje dodatkowe:" />
+		<string id="PDnUz0EnsVJyH" text="Powiadomienie o dzienniku zdarzeń" />
+		<string id="3UWpkfOEaAIzL" text="Pokaż powiadomienie o poziomie wytrzymałości kowala w dzienniku w lewym dolnym rogu ekranu." />
+		<string id="4gwYs6wqtoMx9" text="Powiadomienie na środkowym ekranie" />
+		<string id="F4b8RhAxgtqAy" text="Wyświetlaj powiadomienia o poziomie wytrzymałości kowalskiej w środkowej górnej części ekranu." />
+		<string id="W9KhHjSq0EHDc" text="Okrągłe powiadomienie pop-up" />
+		<string id="wY5QrbROdk7M5" text="Wyświetlaj powiadomienia o poziomie wytrzymałości kowalskiej jako okrągłe okienko po prawej stronie ekranu." />
+		<string id="GK78CZFIe9Dti" text="Przestań czekać, gdy wytrzymałość będzie pełna" />
+		<string id="yOQyJJBraA767" text="Bohater przestanie czekać, gdy wytrzymałość głównego bohatera osiągnie 100%." />
+		<string id="sO6sGMmSdvZQW" text="Regeneruj wytrzymałość podczas podróży" />
+		<string id="Z1K0iP4UAKq6c" text="Wszyscy członkowie drużyny bohaterów będą regenerować wytrzymałość kowalską podczas podróży. 3 dni = 100% wytrzymałości." />
+		<string id="6qMBxn8agWxK2" text="Pokaż powiadomienia podczas podróży" />
+		<string id="zCzem6NK44Yde" text="Pokaż powiadomienia o regeneracji wytrzymałości kowalskiej, gdy bohater podróżuje. Opcja [Regeneracja wytrzymałości podczas podróży] musi być włączona, aby ta funkcja działała." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

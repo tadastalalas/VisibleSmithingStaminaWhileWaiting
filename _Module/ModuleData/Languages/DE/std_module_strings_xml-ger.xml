@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Deutsch" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="Sichtbare Schmiedeausdauer während des Wartens" />
+		<string id="Zqsbdz6MIc9Ex" text="Ausdauer des Haupthelden hat 100 % erreicht" />
+		<string id="OcXCbctwrryDV" text="Wählen Sie aus, wie Ihre Benachrichtigungen zur Ausdauer beim Schmieden angezeigt werden sollen:" />
+		<string id="2wemouR6uduxG" text="Zusätzliche Optionen:" />
+		<string id="PDnUz0EnsVJyH" text="Ereignisprotokollbenachrichtigung" />
+		<string id="3UWpkfOEaAIzL" text="Zeigt eine Benachrichtigung zur Ausdauer beim Schmieden im Protokoll in der unteren linken Ecke des Bildschirms an." />
+		<string id="4gwYs6wqtoMx9" text="Benachrichtigung auf dem mittleren Bildschirm" />
+		<string id="F4b8RhAxgtqAy" text="Zeigt im oberen mittleren Teil des Bildschirms eine Benachrichtigung zur Ausdauer beim Schmieden an." />
+		<string id="W9KhHjSq0EHDc" text="Runde Popup-Benachrichtigung" />
+		<string id="wY5QrbROdk7M5" text="Zeigt eine Benachrichtigung zur Ausdauer beim Schmieden als rundes Popup auf der rechten Seite des Bildschirms an." />
+		<string id="GK78CZFIe9Dti" text="Hören Sie auf zu warten, wenn die Ausdauer voll ist" />
+		<string id="yOQyJJBraA767" text="Der Held hört auf zu warten, wenn die Ausdauer des Haupthelden 100 % erreicht." />
+		<string id="sO6sGMmSdvZQW" text="Regeneriere Ausdauer auf Reisen" />
+		<string id="Z1K0iP4UAKq6c" text="Die Ausdauer aller Mitglieder der Heldengruppe im Schmiedehandwerk regeneriert sich während der Reise. 3 Tage = 100 % Ausdauer." />
+		<string id="6qMBxn8agWxK2" text="Benachrichtigungen während der Reise anzeigen" />
+		<string id="zCzem6NK44Yde" text="Zeigt Benachrichtigungen zur Wiederherstellung der Ausdauer beim Schmieden an, während der Held unterwegs ist. Die Option [Ausdauer während der Reise regenerieren] muss aktiviert sein, damit dies funktioniert." />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>

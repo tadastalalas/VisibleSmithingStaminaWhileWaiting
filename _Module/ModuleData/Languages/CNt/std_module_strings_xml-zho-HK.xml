@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="繁體中文" />
+	</tags>
+	<strings>
+		<string id="EuYdW1aH89JPd" text="等待時可見鍛造耐力" />
+		<string id="Zqsbdz6MIc9Ex" text="主英雄體力達100%" />
+		<string id="OcXCbctwrryDV" text="選擇您希望如何顯示鍛造耐力通知：" />
+		<string id="2wemouR6uduxG" text="附加選項：" />
+		<string id="PDnUz0EnsVJyH" text="事件日誌通知" />
+		<string id="3UWpkfOEaAIzL" text="在螢幕左下角的日誌中顯示鍛造耐力通知。" />
+		<string id="4gwYs6wqtoMx9" text="中螢幕通知" />
+		<string id="F4b8RhAxgtqAy" text="在螢幕的中上部顯示鍛造耐力通知。" />
+		<string id="W9KhHjSq0EHDc" text="圓形彈出通知" />
+		<string id="wY5QrbROdk7M5" text="在螢幕右側以圓形彈出視窗的形式顯示鍛造耐力通知。" />
+		<string id="GK78CZFIe9Dti" text="體力充沛時不再等待" />
+		<string id="yOQyJJBraA767" text="當主英雄體力達到100%時，英雄將停止等待。" />
+		<string id="sO6sGMmSdvZQW" text="旅行時恢復體力" />
+		<string id="Z1K0iP4UAKq6c" text="所有英雄隊員在旅行時都會恢復鍛造耐力。 3 天 = 100% 耐力。" />
+		<string id="6qMBxn8agWxK2" text="旅行時顯示通知" />
+		<string id="zCzem6NK44Yde" text="當英雄旅行時顯示鍛造耐力恢復通知。必須啟用[旅行時恢復體力]選項才能使此功能有效。" />
+		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
+		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
+		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
+		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
+		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
+		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
+		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
+		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
+		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
+		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
+		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
+		<string id="OjIiv3Lo23U0h" text="" />		<!-- {=OjIiv3Lo23U0h} -->
+		<string id="TyZMxXhjj9rgu" text="" />		<!-- {=TyZMxXhjj9rgu} -->
+	</strings>
+</base>
