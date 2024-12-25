@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="All hero party members will regenerate smithing stamina while travelling. 3 days = 100% stamina." />
 		<string id="6qMBxn8agWxK2" text="Show notifications while travelling" />
 		<string id="zCzem6NK44Yde" text="Show smithing stamina recovery notifications while hero is travelling. [Regen stamina while travelling] option must be enabled for this to work." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="Main hero stamina is {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Town] Show current stamina percent" />
+		<string id="WtDruY7sQcxsx" text="Show current smithing stamina percent every hour while waiting in town." />
+		<string id="ErodgkpkVhxKk" text="[Travelling] Show current stamina percent" />
+		<string id="jLu2I19JjbY84" text="Show current smithing stamina percent every hour while travelling in the world." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

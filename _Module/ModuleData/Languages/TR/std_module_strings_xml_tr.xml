@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Tüm kahraman grubu üyeleri seyahat ederken demircilik dayanıklılıklarını yenileyecekler. 3 gün = %100 dayanıklılık." />
 		<string id="6qMBxn8agWxK2" text="Seyahat ederken bildirimleri göster" />
 		<string id="zCzem6NK44Yde" text="Kahraman seyahat ederken demircilik dayanıklılığının geri kazanılması bildirimlerini göster. Bunun çalışması için [Seyahat ederken dayanıklılığı yenile] seçeneğinin etkinleştirilmesi gerekir." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="Ana kahraman dayanıklılığı {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Kasaba] Mevcut dayanıklılık yüzdesini göster" />
+		<string id="WtDruY7sQcxsx" text="Şehirde beklerken her saat güncel demircilik dayanıklılık yüzdesini göster." />
+		<string id="ErodgkpkVhxKk" text="[Seyahat] Mevcut dayanıklılık yüzdesini göster" />
+		<string id="jLu2I19JjbY84" text="Dünya üzerinde seyahat ederken her saat güncel demircilik dayanıklılık yüzdesini göster." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

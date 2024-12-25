@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="所有英雄队员在旅行时都会恢复锻造耐力。3 天 = 100% 耐力。" />
 		<string id="6qMBxn8agWxK2" text="旅行时显示通知" />
 		<string id="zCzem6NK44Yde" text="英雄旅行时显示锻造耐力恢​​复通知。必须启用 [旅行时恢复耐力] 选项才能使此功能有效。" />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="主英雄体力为{percent}%" />
+		<string id="6oTamV4M8XdZO" text="[城镇] 显示当前体力百分比" />
+		<string id="WtDruY7sQcxsx" text="在城镇等待时每小时显示当前锻造耐力百分比。" />
+		<string id="ErodgkpkVhxKk" text="[旅行] 显示当前体力百分比" />
+		<string id="jLu2I19JjbY84" text="在世界各地旅行时每小时显示当前锻造耐力百分比。" />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

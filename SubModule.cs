@@ -1,22 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using HarmonyLib;
+using MCM.Abstractions.Attributes;
+using MCM.Abstractions.Attributes.v2;
+using MCM.Abstractions.Base.Global;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
-using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
+using TaleWorlds.CampaignSystem.GameMenus;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Map.MapNotificationTypes;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Map;
 using TaleWorlds.Core;
+using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.SaveSystem;
-using System;
-using TaleWorlds.Engine;
-using MCM.Abstractions.Base.Global;
-using MCM.Abstractions.Attributes.v2;
-using MCM.Abstractions.Attributes;
-using TaleWorlds.CampaignSystem.GameMenus;
 
 
 namespace VisibleSmithingStaminaWhileWaiting
@@ -30,15 +30,9 @@ namespace VisibleSmithingStaminaWhileWaiting
             harmony.PatchAll();
         }
 
-        protected override void OnSubModuleUnloaded()
-        {
-            base.OnSubModuleUnloaded();
-        }
+        protected override void OnSubModuleUnloaded() => base.OnSubModuleUnloaded();
 
-        protected override void OnBeforeInitialModuleScreenSetAsRoot()
-        {
-            base.OnBeforeInitialModuleScreenSetAsRoot();
-        }
+        protected override void OnBeforeInitialModuleScreenSetAsRoot() => base.OnBeforeInitialModuleScreenSetAsRoot();
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
@@ -54,49 +48,60 @@ namespace VisibleSmithingStaminaWhileWaiting
 
         public class VSSWhileWaiting : CampaignBehaviorBase
         {
-            public override void RegisterEvents()
-            {
-                CampaignEvents.HourlyTickEvent.AddNonSerializedListener(this, HourlyTick);
-            }
+            public override void RegisterEvents() => CampaignEvents.HourlyTickEvent.AddNonSerializedListener(this, HourlyTick);
 
-            public override void SyncData(IDataStore dataStore)
-            {
-                
-            }
+            public override void SyncData(IDataStore dataStore) { }
 
-            private bool _canStaminaMessageBeDisplayed = false;
             private string _message = "{=Zqsbdz6MIc9Ex}Main hero stamina reached 100%";
+            private bool _IsNotificationReadyToBeDisplayed = false;
+            private bool _IsStopWaitingReadyToBeExecuted = false;
 
             private void HourlyTick()
             {
-                if (!IsHeroInAnySettlement() && AttributeGlobalSettings<Settings>.Instance.RegenStaminaWhileTravelling)
+                CheckIfNotificationMeetsConditions();
+                CheckIfStopWaitingMeetsConditions();
+
+
+
+                if ((!IsHeroInTown()) && !DoesHeroHasMaxStamina() && AttributeGlobalSettings<Settings>.Instance.RegenStaminaWhileTravelling)
                 {
+                    if (AttributeGlobalSettings<Settings>.Instance.ShowCurrentStaminaPercentWhileTravelling)
+                        ShowCurrentHeroSmithingStaminaPercentInLog();
+
                     AddStaminaToHeroParty();
-                    if (!DoesHeroHasMaxStamina() && !IsMessageReadyToBeDisplayed() && AttributeGlobalSettings<Settings>.Instance.ShowNotificationsWhileTravelling)
-                    {
-                        SetMessageToBeDisplayed(true);
-                        return;
-                    }
-                    if (DoesHeroHasMaxStamina() && IsMessageReadyToBeDisplayed() && AttributeGlobalSettings<Settings>.Instance.ShowNotificationsWhileTravelling)
-                        DisplayStaminaMessage();
+
+                    if (DoesHeroHasMaxStamina() && AttributeGlobalSettings<Settings>.Instance.ShowNotificationsWhileTravelling)
+                        DisplayStaminaNotification();
+
                     return;
                 }
-                    
 
-                if (!IsHeroInAnySettlement())
-                    return;
+                if (IsHeroInTown() && AttributeGlobalSettings<Settings>.Instance.ShowCurrentStaminaPercentInTown)
+                    ShowCurrentHeroSmithingStaminaPercentInLog();
 
-                if (!DoesHeroHasMaxStamina() && !IsMessageReadyToBeDisplayed())
+                if (IsHeroInTown() && DoesHeroHasMaxStamina() && IsAnySettlementNotificationIsAllowedToBeDisplayed())
                 {
-                    SetMessageToBeDisplayed(true);
+                    DisplayStaminaNotification();
+                    if (AttributeGlobalSettings<Settings>.Instance.StopWaitingWhenStaminaIsFull)
+                        StopWaitingWhenStaminaIsFull();
+
                     return;
                 }
-
-                if (DoesHeroHasMaxStamina() && IsMessageReadyToBeDisplayed())
-                    DisplayStaminaMessage();
             }
 
-            private bool IsHeroInAnySettlement() => Settlement.CurrentSettlement != null;
+            private void CheckIfNotificationMeetsConditions()
+            {
+                if (!_IsNotificationReadyToBeDisplayed && !DoesHeroHasMaxStamina())
+                    _IsNotificationReadyToBeDisplayed = true;
+            }
+
+            private void CheckIfStopWaitingMeetsConditions()
+            {
+                if (!_IsStopWaitingReadyToBeExecuted && !DoesHeroHasMaxStamina())
+                    _IsStopWaitingReadyToBeExecuted = true;
+            }
+
+            private bool IsHeroInTown() => Settlement.CurrentSettlement != null && Settlement.CurrentSettlement.IsTown;
 
             private bool DoesHeroHasMaxStamina()
             {
@@ -107,32 +112,37 @@ namespace VisibleSmithingStaminaWhileWaiting
                 return false;
             }
 
-            private bool IsMessageReadyToBeDisplayed()
+            private bool IsAnySettlementNotificationIsAllowedToBeDisplayed()
             {
-                if (_canStaminaMessageBeDisplayed)
+                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageInTheLog || AttributeGlobalSettings<Settings>.Instance.ShowMessageOnTheScreen || AttributeGlobalSettings<Settings>.Instance.ShowMessageAsPopUp)
                     return true;
                 return false;
             }
 
-            private void SetMessageToBeDisplayed(bool flag) => _canStaminaMessageBeDisplayed = flag;
-
-            private void DisplayStaminaMessage()
+            private void DisplayStaminaNotification()
             {
-                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageInTheLog)
-                    InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
+                if (_IsNotificationReadyToBeDisplayed)
+                {
+                    if (AttributeGlobalSettings<Settings>.Instance.ShowMessageInTheLog) { }
+                        InformationManager.DisplayMessage(new InformationMessage(new TextObject(_message).ToString()));
 
-                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageOnTheScreen)
-                    MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "event:/ui/notification/quest_start");
+                    if (AttributeGlobalSettings<Settings>.Instance.ShowMessageOnTheScreen)
+                        MBInformationManager.AddQuickInformation(new TextObject(_message), 2000, null, "event:/ui/notification/quest_start");
 
-                if (AttributeGlobalSettings<Settings>.Instance.ShowMessageAsPopUp)
-                    Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
+                    if (AttributeGlobalSettings<Settings>.Instance.ShowMessageAsPopUp)
+                        Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(_message)));
 
-                SetMessageToBeDisplayed(false);
+                    _IsNotificationReadyToBeDisplayed = false;
+                }
+            }
 
-                if (AttributeGlobalSettings<Settings>.Instance.StopWaitingWhenStaminaIsFull && !Settlement.CurrentSettlement.IsHideout)
+            private void StopWaitingWhenStaminaIsFull()
+            {
+                if (_IsStopWaitingReadyToBeExecuted)
                 {
                     GameMenu.SwitchToMenu("town");
                     Campaign.Current.TimeControlMode = CampaignTimeControlMode.Stop;
+                    _IsStopWaitingReadyToBeExecuted = false;
                 }
             }
 
@@ -170,6 +180,24 @@ namespace VisibleSmithingStaminaWhileWaiting
                         craftingBehavior.SetHeroCraftingStamina(hero, maxStamina);
                 }
             }
+
+            private int CalculateCurrentHeroSmithingStaminaPercent(Hero hero)
+            {
+                CraftingCampaignBehavior craftingBehavior = CampaignBehaviorBase.GetCampaignBehavior<CraftingCampaignBehavior>();
+                int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(hero);
+                int currentStamina = craftingBehavior.GetHeroCraftingStamina(hero);
+                int percent = (currentStamina * 100) / maxStamina;
+                return percent;
+            }
+
+            private void ShowCurrentHeroSmithingStaminaPercentInLog()
+            {
+                if (DoesHeroHasMaxStamina())
+                    return;
+                var percent = CalculateCurrentHeroSmithingStaminaPercent(Hero.MainHero);
+                MBTextManager.SetTextVariable("percent", percent);
+                InformationManager.DisplayMessage(new InformationMessage(new TextObject("{=zdTrD1TxVpbQY}Main hero stamina is {percent}%").ToString()));
+            }
         }
     }
 
@@ -193,18 +221,12 @@ namespace VisibleSmithingStaminaWhileWaiting
 
         public override TextObject TitleText
         {
-            get
-            {
-                return new TextObject("Smithing stamina is 100%");
-            }
+            get { return new TextObject("Smithing stamina is 100%"); }
         }
 
         public override string SoundEventPath
         {
-            get
-            {
-                return "event:/ui/notification/kingdom_decision";
-            }
+            get { return "event:/ui/notification/kingdom_decision"; }
         }
     }
 
@@ -230,39 +252,27 @@ namespace VisibleSmithingStaminaWhileWaiting
         }
 
     }
-    
+
     internal class Settings : AttributeGlobalSettings<Settings>
     {
         public override string Id
         {
-            get
-            {
-                return "VisibleSmithingStaminaWhileWaiting";
-            }
+            get { return "VisibleSmithingStaminaWhileWaiting"; }
         }
 
         public override string DisplayName
         {
-            get
-            {
-                return new TextObject("{=EuYdW1aH89JPd}Visible Smithing Stamina While Waiting").ToString();
-            }
+            get { return new TextObject("{=EuYdW1aH89JPd}Visible Smithing Stamina While Waiting").ToString(); }
         }
 
         public override string FolderName
         {
-            get
-            {
-                return "VisibleSmithingStaminaWhileWaiting";
-            }
+            get { return "VisibleSmithingStaminaWhileWaiting"; }
         }
 
         public override string FormatType
         {
-            get
-            {
-                return "json2";
-            }
+            get { return "json2"; }
         }
 
         [SettingPropertyBool("{=PDnUz0EnsVJyH}Event log notification", Order = 0, RequireRestart = false, HintText = "{=3UWpkfOEaAIzL}Show smithing stamina notification in the log in the bottom-left corner of the screen.")]
@@ -288,5 +298,13 @@ namespace VisibleSmithingStaminaWhileWaiting
         [SettingPropertyBool("{=6qMBxn8agWxK2}Show notifications while travelling", Order = 2, RequireRestart = false, HintText = "{=zCzem6NK44Yde}Show smithing stamina recovery notifications while hero is travelling. [Regen stamina while travelling] option must be enabled for this to work.")]
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool ShowNotificationsWhileTravelling { get; set; } = false;
+
+        [SettingPropertyBool("{=6oTamV4M8XdZO}[Town] Show current stamina percent", Order = 3, RequireRestart = false, HintText = "{=WtDruY7sQcxsx}Show current smithing stamina percent every hour while waiting in town.")]
+        [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
+        public bool ShowCurrentStaminaPercentInTown { get; set; } = false;
+
+        [SettingPropertyBool("{=ErodgkpkVhxKk}[Travelling] Show current stamina percent", Order = 4, RequireRestart = false, HintText = "{=jLu2I19JjbY84}Show current smithing stamina percent every hour while travelling in the world.")]
+        [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
+        public bool ShowCurrentStaminaPercentWhileTravelling { get; set; } = false;
     }
 }

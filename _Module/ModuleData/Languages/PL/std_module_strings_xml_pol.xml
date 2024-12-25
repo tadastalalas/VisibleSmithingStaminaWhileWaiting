@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Wszyscy członkowie drużyny bohaterów będą regenerować wytrzymałość kowalską podczas podróży. 3 dni = 100% wytrzymałości." />
 		<string id="6qMBxn8agWxK2" text="Pokaż powiadomienia podczas podróży" />
 		<string id="zCzem6NK44Yde" text="Pokaż powiadomienia o regeneracji wytrzymałości kowalskiej, gdy bohater podróżuje. Opcja [Regeneracja wytrzymałości podczas podróży] musi być włączona, aby ta funkcja działała." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="Wytrzymałość głównego bohatera wynosi {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Miasto] Pokaż aktualny procent wytrzymałości" />
+		<string id="WtDruY7sQcxsx" text="Pokaż aktualny poziom wytrzymałości kowala co godzinę podczas oczekiwania w mieście." />
+		<string id="ErodgkpkVhxKk" text="[Podróżowanie] Pokaż aktualny procent wytrzymałości" />
+		<string id="jLu2I19JjbY84" text="Pokaż aktualny poziom wytrzymałości kowalskiej co godzinę podczas podróży po świecie." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

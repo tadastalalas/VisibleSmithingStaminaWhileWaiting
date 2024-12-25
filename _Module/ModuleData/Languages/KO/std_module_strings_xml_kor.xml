@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="모든 영웅 파티원의 대장장이 체력이 여행 중에 재생성됩니다. 3일 = 체력 100%." />
 		<string id="6qMBxn8agWxK2" text="여행 중 알림 표시" />
 		<string id="zCzem6NK44Yde" text="영웅이 여행하는 동안 대장장이 체력 회복 알림을 표시합니다. 이 기능을 사용하려면 [여행하는 동안 체력 재생] 옵션이 활성화되어야 합니다." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="주인공의 체력은 {percent}%입니다." />
+		<string id="6oTamV4M8XdZO" text="[타운] 현재 체력 백분율 표시" />
+		<string id="WtDruY7sQcxsx" text="마을에서 기다리는 동안 매 시간 현재의 대장간 체력 백분율을 표시합니다." />
+		<string id="ErodgkpkVhxKk" text="[여행중] 현재 체력 퍼센트 표시" />
+		<string id="jLu2I19JjbY84" text="세계를 여행하는 동안 매 시간 현재의 대장간 체력 백분율을 표시합니다." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

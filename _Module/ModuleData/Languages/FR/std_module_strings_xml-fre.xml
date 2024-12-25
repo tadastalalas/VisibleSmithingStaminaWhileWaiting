@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Tous les membres du groupe de héros régénéreront leur endurance de forge pendant leur voyage. 3 jours = 100 % d'endurance." />
 		<string id="6qMBxn8agWxK2" text="Afficher les notifications pendant le voyage" />
 		<string id="zCzem6NK44Yde" text="Afficher les notifications de récupération d'endurance de forge pendant que le héros voyage. L'option [Régénérer l'endurance pendant le voyage] doit être activée pour que cela fonctionne." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="L'endurance du héros principal est de {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Ville] Afficher le pourcentage d'endurance actuel" />
+		<string id="WtDruY7sQcxsx" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures pendant que vous attendez en ville." />
+		<string id="ErodgkpkVhxKk" text="[En voyage] Afficher le pourcentage d'endurance actuel" />
+		<string id="jLu2I19JjbY84" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures lorsque vous voyagez dans le monde." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

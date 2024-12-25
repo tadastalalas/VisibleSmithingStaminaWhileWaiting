@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Todos os membros do grupo de heróis regenerarão a resistência de ferraria enquanto viajam. 3 dias = 100% de resistência." />
 		<string id="6qMBxn8agWxK2" text="Mostrar notificações enquanto viaja" />
 		<string id="zCzem6NK44Yde" text="Exibir notificações de recuperação de resistência de ferreiro enquanto o herói estiver viajando. A opção [Regenerar resistência enquanto viaja] deve estar habilitada para que isso funcione." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="A resistência do herói principal é {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Cidade] Mostrar porcentagem de resistência atual" />
+		<string id="WtDruY7sQcxsx" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto espera na cidade." />
+		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentagem de resistência atual" />
+		<string id="jLu2I19JjbY84" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto viaja pelo mundo." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

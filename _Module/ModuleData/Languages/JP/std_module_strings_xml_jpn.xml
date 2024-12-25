@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="ヒーロー パーティのメンバー全員は、移動中に鍛冶スタミナを回復します。3 日 = 100% スタミナ。" />
 		<string id="6qMBxn8agWxK2" text="旅行中に通知を表示する" />
 		<string id="zCzem6NK44Yde" text="ヒーローが移動中に鍛冶スタミナ回復通知を表示します。これを機能させるには、[移動中にスタミナを回復] オプションを有効にする必要があります。" />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="メインヒーローのスタミナは{percent}%です" />
+		<string id="6oTamV4M8XdZO" text="[タウン] 現在のスタミナパーセントを表示" />
+		<string id="WtDruY7sQcxsx" text="町で待機している間、現在の鍛冶スタミナのパーセンテージを 1 時間ごとに表示します。" />
+		<string id="ErodgkpkVhxKk" text="[旅行中] 現在のスタミナパーセントを表示" />
+		<string id="jLu2I19JjbY84" text="世界を旅している間、現在の鍛冶スタミナのパーセンテージを 1 時間ごとに表示します。" />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Die Ausdauer aller Mitglieder der Heldengruppe im Schmiedehandwerk regeneriert sich während der Reise. 3 Tage = 100 % Ausdauer." />
 		<string id="6qMBxn8agWxK2" text="Benachrichtigungen während der Reise anzeigen" />
 		<string id="zCzem6NK44Yde" text="Zeigt Benachrichtigungen zur Wiederherstellung der Ausdauer beim Schmieden an, während der Held unterwegs ist. Die Option [Ausdauer während der Reise regenerieren] muss aktiviert sein, damit dies funktioniert." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="Die Ausdauer des Haupthelden beträgt {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Stadt] Aktuelle Ausdauer in Prozent anzeigen" />
+		<string id="WtDruY7sQcxsx" text="Zeigt stündlich den aktuellen Prozentsatz der Ausdauer im Schmiedehandwerk an, während Sie in der Stadt warten." />
+		<string id="ErodgkpkVhxKk" text="[Reisen] Aktuelle Ausdauer in Prozent anzeigen" />
+		<string id="jLu2I19JjbY84" text="Zeigt stündlich den aktuellen Prozentsatz der Schmiedeausdauer an, während Sie durch die Welt reisen." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

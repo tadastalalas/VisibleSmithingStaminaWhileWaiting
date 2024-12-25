@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Tutti i membri del gruppo di eroi rigenereranno la resistenza della forgiatura durante il viaggio. 3 giorni = 100% di resistenza." />
 		<string id="6qMBxn8agWxK2" text="Mostra notifiche durante il viaggio" />
 		<string id="zCzem6NK44Yde" text="Mostra le notifiche di recupero della resistenza della forgiatura mentre l'eroe è in viaggio. L'opzione [Rigenera resistenza durante il viaggio] deve essere abilitata affinché funzioni." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="La resistenza dell'eroe principale è {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Città] Mostra la percentuale di resistenza attuale" />
+		<string id="WtDruY7sQcxsx" text="Mostra la percentuale attuale di resistenza della forgiatura ogni ora mentre aspetti in città." />
+		<string id="ErodgkpkVhxKk" text="[Viaggio] Mostra la percentuale di resistenza attuale" />
+		<string id="jLu2I19JjbY84" text="Mostra la percentuale attuale di resistenza alla forgiatura ogni ora mentre viaggi nel mondo." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->

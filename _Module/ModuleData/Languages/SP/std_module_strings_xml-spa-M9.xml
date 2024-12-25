@@ -20,11 +20,11 @@
 		<string id="Z1K0iP4UAKq6c" text="Todos los miembros del grupo de héroes regenerarán resistencia de herrería mientras viajan. 3 días = 100 % de resistencia." />
 		<string id="6qMBxn8agWxK2" text="Mostrar notificaciones mientras viajas" />
 		<string id="zCzem6NK44Yde" text="Mostrar notificaciones de recuperación de resistencia de herrería mientras el héroe está viajando. La opción [Regenerar resistencia mientras se viaja] debe estar habilitada para que esto funcione." />
-		<string id="zdTrD1TxVpbQY" text="" />		<!-- {=zdTrD1TxVpbQY} -->
-		<string id="6oTamV4M8XdZO" text="" />		<!-- {=6oTamV4M8XdZO} -->
-		<string id="WtDruY7sQcxsx" text="" />		<!-- {=WtDruY7sQcxsx} -->
-		<string id="ErodgkpkVhxKk" text="" />		<!-- {=ErodgkpkVhxKk} -->
-		<string id="jLu2I19JjbY84" text="" />		<!-- {=jLu2I19JjbY84} -->
+		<string id="zdTrD1TxVpbQY" text="La resistencia del héroe principal es {percent}%" />
+		<string id="6oTamV4M8XdZO" text="[Ciudad] Mostrar porcentaje de resistencia actual" />
+		<string id="WtDruY7sQcxsx" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras esperas en la ciudad." />
+		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentaje de resistencia actual" />
+		<string id="jLu2I19JjbY84" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras viajas por el mundo." />
 		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
 		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
