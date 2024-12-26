@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="Şehirde beklerken her saat güncel demircilik dayanıklılık yüzdesini göster." />
 		<string id="ErodgkpkVhxKk" text="[Seyahat] Mevcut dayanıklılık yüzdesini göster" />
 		<string id="jLu2I19JjbY84" text="Dünya üzerinde seyahat ederken her saat güncel demircilik dayanıklılık yüzdesini göster." />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="Sürükleyici Dayanıklılık Yenilenmesi" />
+		<string id="01qKs9tTnkpZk" text="Kahramanın demircilik becerisine bağlı olarak demircilik dayanıklılığını yeniler. Formül: Yenilenme miktarı (saat başına) = (Demircilik Becerisi / 10)." />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->

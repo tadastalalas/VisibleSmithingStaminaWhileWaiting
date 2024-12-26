@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto espera na cidade." />
 		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentagem de resistência atual" />
 		<string id="jLu2I19JjbY84" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto viaja pelo mundo." />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="Regeneração de Stamina Imersiva" />
+		<string id="01qKs9tTnkpZk" text="Regenera a resistência de ferreiro com base na habilidade de ferreiro do herói. Fórmula: Quantidade de regeneração (por hora) = (Habilidade de ferreiro / 10)." />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->

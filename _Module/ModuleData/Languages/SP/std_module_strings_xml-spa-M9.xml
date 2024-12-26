@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras esperas en la ciudad." />
 		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentaje de resistencia actual" />
 		<string id="jLu2I19JjbY84" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras viajas por el mundo." />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="Regeneración de resistencia inmersiva" />
+		<string id="01qKs9tTnkpZk" text="Regenera la resistencia de herrería según la habilidad de herrería del héroe. Fórmula: cantidad de regeneración (por hora) = (habilidad de herrería / 10)." />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->

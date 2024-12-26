@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures pendant que vous attendez en ville." />
 		<string id="ErodgkpkVhxKk" text="[En voyage] Afficher le pourcentage d'endurance actuel" />
 		<string id="jLu2I19JjbY84" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures lorsque vous voyagez dans le monde." />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="Régénération immersive de l'endurance" />
+		<string id="01qKs9tTnkpZk" text="Régénère l'endurance de forge en fonction de la compétence de forge du héros. Formule : Quantité de régénération (par heure) = (Compétence de forge / 10)." />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->

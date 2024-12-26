@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="在城镇等待时每小时显示当前锻造耐力百分比。" />
 		<string id="ErodgkpkVhxKk" text="[旅行] 显示当前体力百分比" />
 		<string id="jLu2I19JjbY84" text="在世界各地旅行时每小时显示当前锻造耐力百分比。" />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="沉浸式体力恢复" />
+		<string id="01qKs9tTnkpZk" text="根据英雄的锻造技能恢复锻造耐力。公式：恢复量（每小时）=（锻造技能/10）。" />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->

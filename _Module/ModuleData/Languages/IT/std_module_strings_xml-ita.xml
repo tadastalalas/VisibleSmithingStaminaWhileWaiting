@@ -25,8 +25,8 @@
 		<string id="WtDruY7sQcxsx" text="Mostra la percentuale attuale di resistenza della forgiatura ogni ora mentre aspetti in città." />
 		<string id="ErodgkpkVhxKk" text="[Viaggio] Mostra la percentuale di resistenza attuale" />
 		<string id="jLu2I19JjbY84" text="Mostra la percentuale attuale di resistenza alla forgiatura ogni ora mentre viaggi nel mondo." />
-		<string id="s2viSnCYOMSCW" text="" />		<!-- {=s2viSnCYOMSCW} -->
-		<string id="01qKs9tTnkpZk" text="" />		<!-- {=01qKs9tTnkpZk} -->
+		<string id="s2viSnCYOMSCW" text="Rigenerazione della resistenza immersiva" />
+		<string id="01qKs9tTnkpZk" text="Rigenera la resistenza di forgiatura in base all'abilità di forgiatura dell'eroe. Formula: Quantità di rigenerazione (all'ora) = (Abilità di forgiatura / 10)." />
 		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
 		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
 		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
