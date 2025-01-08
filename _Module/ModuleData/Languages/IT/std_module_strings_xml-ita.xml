@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="Resistenza visibile alla forgiatura durante l'attesa" />
-		<string id="Zqsbdz6MIc9Ex" text="La resistenza dell'eroe principale ha raggiunto il 100%" />
+		<string id="Zqsbdz6MIc9Ex" text="La resistenza alla forgiatura del gruppo viene ripristinata" />
 		<string id="OcXCbctwrryDV" text="Seleziona come desideri che vengano visualizzate le notifiche relative alla resistenza della forgiatura:" />
 		<string id="2wemouR6uduxG" text="Opzioni aggiuntive:" />
 		<string id="PDnUz0EnsVJyH" text="Notifica del registro eventi" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="Tutti i membri del gruppo di eroi rigenereranno la resistenza della forgiatura durante il viaggio. 3 giorni = 100% di resistenza." />
 		<string id="6qMBxn8agWxK2" text="Mostra notifiche durante il viaggio" />
 		<string id="zCzem6NK44Yde" text="Mostra le notifiche di recupero della resistenza della forgiatura mentre l'eroe è in viaggio. L'opzione [Rigenera resistenza durante il viaggio] deve essere abilitata affinché funzioni." />
-		<string id="zdTrD1TxVpbQY" text="La resistenza dell'eroe principale è {percent}%" />
+		<string id="zdTrD1TxVpbQY" text="La resistenza del partito è {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Città] Mostra la percentuale di resistenza attuale" />
 		<string id="WtDruY7sQcxsx" text="Mostra la percentuale attuale di resistenza della forgiatura ogni ora mentre aspetti in città." />
 		<string id="ErodgkpkVhxKk" text="[Viaggio] Mostra la percentuale di resistenza attuale" />
 		<string id="jLu2I19JjbY84" text="Mostra la percentuale attuale di resistenza alla forgiatura ogni ora mentre viaggi nel mondo." />
 		<string id="s2viSnCYOMSCW" text="Rigenerazione della resistenza immersiva" />
-		<string id="01qKs9tTnkpZk" text="Rigenera la resistenza di forgiatura in base all'abilità di forgiatura dell'eroe. Formula: Quantità di rigenerazione (all'ora) = (Abilità di forgiatura / 10)." />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="Rigenera la resistenza della forgiatura in base all'abilità di forgiatura dell'eroe.\nFormula semplice: (Abilità di forgiatura / 20) = Quantità di rigenerazione all'ora." />
+		<string id="ey3zAJ91Tj1Fk" text="Ore per ripristinare completamente la resistenza" />
+		<string id="hkyjCW0dowCis" text="In quante ore un eroe del gruppo ripristinerà la resistenza dallo 0% al 100%. [Default: 72 ore]" />
+		<string id="eyXXNJ2r9YjOv" text="Divisore di rigenerazione immersiva" />
+		<string id="QnNdfiTqAmiD4" text="Un numero di aiuto per calcolare quanta resistenza verrà ripristinata ogni ora se è selezionata la modalità immersiva. Numero più alto = ripristino più lungo. [Default: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

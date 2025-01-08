@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="Beklerken Görünür Demircilik Dayanıklılığı" />
-		<string id="Zqsbdz6MIc9Ex" text="Ana kahraman dayanıklılığı %100'e ulaştı" />
+		<string id="Zqsbdz6MIc9Ex" text="Partinin demircilik dayanıklılığı yenilendi" />
 		<string id="OcXCbctwrryDV" text="Demircilik dayanıklılığı bildirimlerinizin nasıl gösterilmesini istediğinizi seçin:" />
 		<string id="2wemouR6uduxG" text="Ek seçenekler:" />
 		<string id="PDnUz0EnsVJyH" text="Olay günlüğü bildirimi" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="Tüm kahraman grubu üyeleri seyahat ederken demircilik dayanıklılıklarını yenileyecekler. 3 gün = %100 dayanıklılık." />
 		<string id="6qMBxn8agWxK2" text="Seyahat ederken bildirimleri göster" />
 		<string id="zCzem6NK44Yde" text="Kahraman seyahat ederken demircilik dayanıklılığının geri kazanılması bildirimlerini göster. Bunun çalışması için [Seyahat ederken dayanıklılığı yenile] seçeneğinin etkinleştirilmesi gerekir." />
-		<string id="zdTrD1TxVpbQY" text="Ana kahraman dayanıklılığı {percent}%" />
+		<string id="zdTrD1TxVpbQY" text="Partinin dayanıklılığı {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Kasaba] Mevcut dayanıklılık yüzdesini göster" />
 		<string id="WtDruY7sQcxsx" text="Şehirde beklerken her saat güncel demircilik dayanıklılık yüzdesini göster." />
 		<string id="ErodgkpkVhxKk" text="[Seyahat] Mevcut dayanıklılık yüzdesini göster" />
 		<string id="jLu2I19JjbY84" text="Dünya üzerinde seyahat ederken her saat güncel demircilik dayanıklılık yüzdesini göster." />
 		<string id="s2viSnCYOMSCW" text="Sürükleyici Dayanıklılık Yenilenmesi" />
-		<string id="01qKs9tTnkpZk" text="Kahramanın demircilik becerisine bağlı olarak demircilik dayanıklılığını yeniler. Formül: Yenilenme miktarı (saat başına) = (Demircilik Becerisi / 10)." />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="Kahramanın demircilik becerisine bağlı olarak demircilik dayanıklılığını yeniler.\nBasit formül: (Demircilik becerisi / 20) = Saat başına yenilenme miktarı." />
+		<string id="ey3zAJ91Tj1Fk" text="Dayanıklılığı tamamen yenilemek için saatler" />
+		<string id="hkyjCW0dowCis" text="Partideki herhangi bir kahramanın dayanıklılığını %0'dan %100'e kaç saatte yeniler? [Varsayılan: 72 saat]" />
+		<string id="eyXXNJ2r9YjOv" text="Sürükleyici rejenerasyon bölücü" />
+		<string id="QnNdfiTqAmiD4" text="Eğer sürükleyici mod seçilirse her saat ne kadar dayanıklılığın yenileneceğini hesaplamak için bir yardımcı sayı. Daha yüksek sayı = daha uzun yenileme. [Varsayılan: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

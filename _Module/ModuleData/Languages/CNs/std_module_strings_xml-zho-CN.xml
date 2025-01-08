@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="等待时可见锻造耐力" />
-		<string id="Zqsbdz6MIc9Ex" text="主英雄体力达到100%" />
+		<string id="Zqsbdz6MIc9Ex" text="队伍的锻造耐力得到补充" />
 		<string id="OcXCbctwrryDV" text="选择您希望如何显示锻造耐力通知：" />
 		<string id="2wemouR6uduxG" text="附加选项：" />
 		<string id="PDnUz0EnsVJyH" text="事件日志通知" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="所有英雄队员在旅行时都会恢复锻造耐力。3 天 = 100% 耐力。" />
 		<string id="6qMBxn8agWxK2" text="旅行时显示通知" />
 		<string id="zCzem6NK44Yde" text="英雄旅行时显示锻造耐力恢​​复通知。必须启用 [旅行时恢复耐力] 选项才能使此功能有效。" />
-		<string id="zdTrD1TxVpbQY" text="主英雄体力为{percent}%" />
+		<string id="zdTrD1TxVpbQY" text="队伍体力为{percent}%" />
 		<string id="6oTamV4M8XdZO" text="[城镇] 显示当前体力百分比" />
 		<string id="WtDruY7sQcxsx" text="在城镇等待时每小时显示当前锻造耐力百分比。" />
 		<string id="ErodgkpkVhxKk" text="[旅行] 显示当前体力百分比" />
 		<string id="jLu2I19JjbY84" text="在世界各地旅行时每小时显示当前锻造耐力百分比。" />
 		<string id="s2viSnCYOMSCW" text="沉浸式体力恢复" />
-		<string id="01qKs9tTnkpZk" text="根据英雄的锻造技能恢复锻造耐力。公式：恢复量（每小时）=（锻造技能/10）。" />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="根据英雄的锻造技能恢复锻造耐力。\n简单公式：（锻造技能/20）=每小时恢复量。" />
+		<string id="ey3zAJ91Tj1Fk" text="完全补充体力所需的时间" />
+		<string id="hkyjCW0dowCis" text="小队中任意一位英雄的体力会在多少小时内从 0% 恢复至 100%。[默认：72 小时]" />
+		<string id="eyXXNJ2r9YjOv" text="沉浸式再生除数" />
+		<string id="QnNdfiTqAmiD4" text="如果选择沉浸模式，则计算每小时将补充多少体力的辅助数字。数字越大 = 补充时间越长。[默认值：20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

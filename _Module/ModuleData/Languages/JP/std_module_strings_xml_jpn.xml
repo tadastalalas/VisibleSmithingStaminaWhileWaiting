@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="待機中の鍛冶スタミナの表示" />
-		<string id="Zqsbdz6MIc9Ex" text="メインヒーローのスタミナが100%に到達" />
+		<string id="Zqsbdz6MIc9Ex" text="パーティの鍛冶スタミナが回復する" />
 		<string id="OcXCbctwrryDV" text="鍛冶スタミナ通知の表示方法を選択します:" />
 		<string id="2wemouR6uduxG" text="追加オプション:" />
 		<string id="PDnUz0EnsVJyH" text="イベントログ通知" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="ヒーロー パーティのメンバー全員は、移動中に鍛冶スタミナを回復します。3 日 = 100% スタミナ。" />
 		<string id="6qMBxn8agWxK2" text="旅行中に通知を表示する" />
 		<string id="zCzem6NK44Yde" text="ヒーローが移動中に鍛冶スタミナ回復通知を表示します。これを機能させるには、[移動中にスタミナを回復] オプションを有効にする必要があります。" />
-		<string id="zdTrD1TxVpbQY" text="メインヒーローのスタミナは{percent}%です" />
+		<string id="zdTrD1TxVpbQY" text="パーティのスタミナは{percent}%です" />
 		<string id="6oTamV4M8XdZO" text="[タウン] 現在のスタミナパーセントを表示" />
 		<string id="WtDruY7sQcxsx" text="町で待機している間、現在の鍛冶スタミナのパーセンテージを 1 時間ごとに表示します。" />
 		<string id="ErodgkpkVhxKk" text="[旅行中] 現在のスタミナパーセントを表示" />
 		<string id="jLu2I19JjbY84" text="世界を旅している間、現在の鍛冶スタミナのパーセンテージを 1 時間ごとに表示します。" />
 		<string id="s2viSnCYOMSCW" text="没入型スタミナ回復" />
-		<string id="01qKs9tTnkpZk" text="英雄の鍛冶スキルに基づいて鍛冶スタミナを回復します。計算式: 回復量(1時間あたり) = (鍛冶スキル / 10)。" />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="主人公の鍛冶スキルに基づいて鍛冶スタミナを回復します。\n簡単な計算式: (鍛冶スキル / 20) = 1 時間あたりの回復量。" />
+		<string id="ey3zAJ91Tj1Fk" text="スタミナを完全に回復するのにかかる時間" />
+		<string id="hkyjCW0dowCis" text="パーティー内のヒーローがスタミナを 0% から 100% まで回復するのにかかる時間。[デフォルト: 72 時間]" />
+		<string id="eyXXNJ2r9YjOv" text="没入型再生除数" />
+		<string id="QnNdfiTqAmiD4" text="没入モードを選択した場合に、1 時間ごとにスタミナがどれだけ回復するかを計算するヘルパー数値。数値が大きいほど、回復時間が長くなります。[デフォルト: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

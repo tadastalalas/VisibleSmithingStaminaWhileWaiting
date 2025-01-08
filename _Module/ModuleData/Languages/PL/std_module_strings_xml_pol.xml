@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="Widoczna wytrzymałość kowalska podczas oczekiwania" />
-		<string id="Zqsbdz6MIc9Ex" text="Wytrzymałość głównego bohatera osiągnęła 100%" />
+		<string id="Zqsbdz6MIc9Ex" text="Wytrzymałość kowalska drużyny zostaje uzupełniona" />
 		<string id="OcXCbctwrryDV" text="Wybierz sposób wyświetlania powiadomień o wytrzymałości kowalskiej:" />
 		<string id="2wemouR6uduxG" text="Opcje dodatkowe:" />
 		<string id="PDnUz0EnsVJyH" text="Powiadomienie o dzienniku zdarzeń" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="Wszyscy członkowie drużyny bohaterów będą regenerować wytrzymałość kowalską podczas podróży. 3 dni = 100% wytrzymałości." />
 		<string id="6qMBxn8agWxK2" text="Pokaż powiadomienia podczas podróży" />
 		<string id="zCzem6NK44Yde" text="Pokaż powiadomienia o regeneracji wytrzymałości kowalskiej, gdy bohater podróżuje. Opcja [Regeneracja wytrzymałości podczas podróży] musi być włączona, aby ta funkcja działała." />
-		<string id="zdTrD1TxVpbQY" text="Wytrzymałość głównego bohatera wynosi {percent}%" />
+		<string id="zdTrD1TxVpbQY" text="Wytrzymałość drużyny wynosi {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Miasto] Pokaż aktualny procent wytrzymałości" />
 		<string id="WtDruY7sQcxsx" text="Pokaż aktualny poziom wytrzymałości kowala co godzinę podczas oczekiwania w mieście." />
 		<string id="ErodgkpkVhxKk" text="[Podróżowanie] Pokaż aktualny procent wytrzymałości" />
 		<string id="jLu2I19JjbY84" text="Pokaż aktualny poziom wytrzymałości kowalskiej co godzinę podczas podróży po świecie." />
 		<string id="s2viSnCYOMSCW" text="Wciągająca regeneracja wytrzymałości" />
-		<string id="01qKs9tTnkpZk" text="Regeneruj wytrzymałość kowalską na podstawie umiejętności kowalskich bohatera. Wzór: Ilość regeneracji (na godzinę) = (Umiejętność kowalska / 10)." />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="Regeneruje wytrzymałość kowalską na podstawie umiejętności kowalskich bohatera.\nProsty wzór: (umiejętność kowalska / 20) = ilość regeneracji na godzinę." />
+		<string id="ey3zAJ91Tj1Fk" text="Godziny na pełne uzupełnienie wytrzymałości" />
+		<string id="hkyjCW0dowCis" text="Po ilu godzinach bohater w drużynie odnowi wytrzymałość z 0% do 100%. [Domyślnie: 72 godziny]" />
+		<string id="eyXXNJ2r9YjOv" text="Dzielnik regeneracji immersyjnej" />
+		<string id="QnNdfiTqAmiD4" text="Liczba pomocnicza do obliczania, ile wytrzymałości będzie uzupełniane co godzinę, jeśli wybrano tryb immersyjny. Wyższa liczba = dłuższe uzupełnianie. [Domyślnie: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

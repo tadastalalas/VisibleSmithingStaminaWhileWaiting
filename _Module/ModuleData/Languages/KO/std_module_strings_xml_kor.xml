@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="기다리는 동안 보이는 스미싱 스태미나" />
-		<string id="Zqsbdz6MIc9Ex" text="주인공 체력이 100%에 도달했습니다." />
+		<string id="Zqsbdz6MIc9Ex" text="파티의 대장장이 체력이 회복됩니다." />
 		<string id="OcXCbctwrryDV" text="대장간 체력 알림을 표시할 방법을 선택하세요:" />
 		<string id="2wemouR6uduxG" text="추가 옵션:" />
 		<string id="PDnUz0EnsVJyH" text="이벤트 로그 알림" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="모든 영웅 파티원의 대장장이 체력이 여행 중에 재생성됩니다. 3일 = 체력 100%." />
 		<string id="6qMBxn8agWxK2" text="여행 중 알림 표시" />
 		<string id="zCzem6NK44Yde" text="영웅이 여행하는 동안 대장장이 체력 회복 알림을 표시합니다. 이 기능을 사용하려면 [여행하는 동안 체력 재생] 옵션이 활성화되어야 합니다." />
-		<string id="zdTrD1TxVpbQY" text="주인공의 체력은 {percent}%입니다." />
+		<string id="zdTrD1TxVpbQY" text="파티의 체력은 {percent}%입니다." />
 		<string id="6oTamV4M8XdZO" text="[타운] 현재 체력 백분율 표시" />
 		<string id="WtDruY7sQcxsx" text="마을에서 기다리는 동안 매 시간 현재의 대장간 체력 백분율을 표시합니다." />
 		<string id="ErodgkpkVhxKk" text="[여행중] 현재 체력 퍼센트 표시" />
 		<string id="jLu2I19JjbY84" text="세계를 여행하는 동안 매 시간 현재의 대장간 체력 백분율을 표시합니다." />
 		<string id="s2viSnCYOMSCW" text="몰입형 체력 회복" />
-		<string id="01qKs9tTnkpZk" text="영웅의 대장간 기술에 따라 대장간 체력을 재생합니다. 공식: 재생량(시간당) = (대장간 기술 / 10)." />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="영웅의 대장간 기술에 따라 대장간 체력이 재생성됩니다.\n간단한 공식: (대장간 기술 / 20) = 시간당 재생량." />
+		<string id="ey3zAJ91Tj1Fk" text="체력을 완전히 보충하는 데 걸리는 시간" />
+		<string id="hkyjCW0dowCis" text="파티에 있는 영웅이 체력을 0%에서 100%까지 회복하는 데 걸리는 시간은 얼마입니까? [기본값: 72시간]" />
+		<string id="eyXXNJ2r9YjOv" text="몰입형 재생 분할기" />
+		<string id="QnNdfiTqAmiD4" text="몰입형 모드를 선택하면 매 시간 얼마나 많은 스태미나가 보충되는지 계산하는 도우미 숫자입니다. 숫자가 높을수록 보충 시간이 길어집니다. [기본값: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="Resistencia de herrería visible mientras espera" />
-		<string id="Zqsbdz6MIc9Ex" text="La resistencia del héroe principal alcanzó el 100 %" />
+		<string id="Zqsbdz6MIc9Ex" text="La resistencia de herrería del grupo se repone." />
 		<string id="OcXCbctwrryDV" text="Selecciona cómo quieres que se muestren tus notificaciones de resistencia de herrería:" />
 		<string id="2wemouR6uduxG" text="Opciones adicionales:" />
 		<string id="PDnUz0EnsVJyH" text="Notificación de registro de eventos" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="Todos los miembros del grupo de héroes regenerarán resistencia de herrería mientras viajan. 3 días = 100 % de resistencia." />
 		<string id="6qMBxn8agWxK2" text="Mostrar notificaciones mientras viajas" />
 		<string id="zCzem6NK44Yde" text="Mostrar notificaciones de recuperación de resistencia de herrería mientras el héroe está viajando. La opción [Regenerar resistencia mientras se viaja] debe estar habilitada para que esto funcione." />
-		<string id="zdTrD1TxVpbQY" text="La resistencia del héroe principal es {percent}%" />
+		<string id="zdTrD1TxVpbQY" text="La resistencia del grupo es del {porcentaje} %" />
 		<string id="6oTamV4M8XdZO" text="[Ciudad] Mostrar porcentaje de resistencia actual" />
 		<string id="WtDruY7sQcxsx" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras esperas en la ciudad." />
 		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentaje de resistencia actual" />
 		<string id="jLu2I19JjbY84" text="Muestra el porcentaje actual de resistencia de herrería cada hora mientras viajas por el mundo." />
 		<string id="s2viSnCYOMSCW" text="Regeneración de resistencia inmersiva" />
-		<string id="01qKs9tTnkpZk" text="Regenera la resistencia de herrería según la habilidad de herrería del héroe. Fórmula: cantidad de regeneración (por hora) = (habilidad de herrería / 10)." />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="Regenera la resistencia de herrería según la habilidad de herrería del héroe.\nFórmula simple: (Habilidad de herrería / 20) = Cantidad de regeneración por hora." />
+		<string id="ey3zAJ91Tj1Fk" text="Horas para reponer la resistencia por completo" />
+		<string id="hkyjCW0dowCis" text="En cuántas horas cualquier héroe del grupo recuperará su resistencia del 0 % al 100 %. [Predeterminado: 72 horas]" />
+		<string id="eyXXNJ2r9YjOv" text="Divisor de regeneración inmersiva" />
+		<string id="QnNdfiTqAmiD4" text="Un número auxiliar para calcular cuánta energía se recuperará cada hora si se selecciona el modo inmersivo. Cuanto mayor sea el número, más tiempo se recuperará. [Predeterminado: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->

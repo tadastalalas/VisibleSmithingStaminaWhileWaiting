@@ -5,7 +5,7 @@
 	</tags>
 	<strings>
 		<string id="EuYdW1aH89JPd" text="等待時可見鍛造耐力" />
-		<string id="Zqsbdz6MIc9Ex" text="主英雄體力達100%" />
+		<string id="Zqsbdz6MIc9Ex" text="隊伍的鍛造耐力得到補充" />
 		<string id="OcXCbctwrryDV" text="選擇您希望如何顯示鍛造耐力通知：" />
 		<string id="2wemouR6uduxG" text="附加選項：" />
 		<string id="PDnUz0EnsVJyH" text="事件日誌通知" />
@@ -20,17 +20,17 @@
 		<string id="Z1K0iP4UAKq6c" text="所有英雄隊員在旅行時都會恢復鍛造耐力。 3 天 = 100% 耐力。" />
 		<string id="6qMBxn8agWxK2" text="旅行時顯示通知" />
 		<string id="zCzem6NK44Yde" text="當英雄旅行時顯示鍛造耐力恢復通知。必須啟用[旅行時恢復體力]選項才能使此功能有效。" />
-		<string id="zdTrD1TxVpbQY" text="主英雄體力為{percent}%" />
+		<string id="zdTrD1TxVpbQY" text="隊伍體力為{percent}%" />
 		<string id="6oTamV4M8XdZO" text="[城鎮] 顯示目前體力百分比" />
 		<string id="WtDruY7sQcxsx" text="在城鎮等待時每小時顯示當前鍛造耐力百分比。" />
 		<string id="ErodgkpkVhxKk" text="[旅行] 顯示當前體力百分比" />
 		<string id="jLu2I19JjbY84" text="在世界各地旅行時每小時顯示當前鍛造耐力百分比。" />
 		<string id="s2viSnCYOMSCW" text="沉浸式體力恢復" />
-		<string id="01qKs9tTnkpZk" text="根據英雄的鍛造技能恢復鍛造耐力。公式：再生量（每小時）=（鍛造技能/10）。" />
-		<string id="ey3zAJ91Tj1Fk" text="" />		<!-- {=ey3zAJ91Tj1Fk} -->
-		<string id="hkyjCW0dowCis" text="" />		<!-- {=hkyjCW0dowCis} -->
-		<string id="eyXXNJ2r9YjOv" text="" />		<!-- {=eyXXNJ2r9YjOv} -->
-		<string id="QnNdfiTqAmiD4" text="" />		<!-- {=QnNdfiTqAmiD4} -->
+		<string id="01qKs9tTnkpZk" text="根據英雄的鍛造技能恢復鍛造耐力。" />
+		<string id="ey3zAJ91Tj1Fk" text="完全補充體力所需的時間" />
+		<string id="hkyjCW0dowCis" text="小隊中任何一位英雄的體力需要多少小時才能從0%恢復到100%。 [預設：72小時]" />
+		<string id="eyXXNJ2r9YjOv" text="沉浸式再生除數" />
+		<string id="QnNdfiTqAmiD4" text="一個輔助數字，用於計算選擇沉浸模式時每小時將補充多少體力。數字越高 = 補貨時間越長。 [預設值：20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
 		<string id="OnMsUyV33fxjm" text="" />		<!-- {=OnMsUyV33fxjm} -->
 		<string id="46NA1GrO5aoXf" text="" />		<!-- {=46NA1GrO5aoXf} -->
