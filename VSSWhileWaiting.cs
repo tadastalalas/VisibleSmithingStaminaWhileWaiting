@@ -24,6 +24,7 @@ namespace VisibleSmithingStaminaWhileWaiting
             private bool _isTimeStopReady = false;
 
             private readonly MCMSettings settings = AttributeGlobalSettings<MCMSettings>.Instance ?? new MCMSettings();
+            private CraftingCampaignBehavior? craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
 
             private void OnHourlyTick()
             {
@@ -36,40 +37,44 @@ namespace VisibleSmithingStaminaWhileWaiting
                 PrepareTimeStopOnConditions(true, isAnybodyInPartyHasUsedStamina);
 
                 if (IsHeroInTown())
-                {
-                    if (settings.UseSmithingSkillForStaminaRegen && isAnybodyInPartyHasUsedStamina)
-                    {
-                        RegenerateStaminaForAllParty();
-                        isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
-                    }
+                    HandleTownStaminaRegeneration(isAnybodyInPartyHasUsedStamina);
+                else
+                    HandleTravelStaminaRegeneration(isAnybodyInPartyHasUsedStamina);
+            }
 
-                    if (settings.ShowCurrentPartysStaminaPercentWhileInTown && isAnybodyInPartyHasUsedStamina)
+            private void HandleTownStaminaRegeneration(bool isAnybodyInPartyHasUsedStamina)
+            {
+                if (settings.UseSmithingSkillForStaminaRegen && isAnybodyInPartyHasUsedStamina)
+                {
+                    RegenerateStaminaForAllParty();
+                    isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
+                }
+
+                if (settings.ShowCurrentPartysStaminaPercentWhileInTown && isAnybodyInPartyHasUsedStamina)
+                    LogCurrentPartysSmithingStaminaPercent();
+
+                if (!isAnybodyInPartyHasUsedStamina)
+                {
+                    if (ShouldDisplayNotifications())
+                        DisplayStaminaNotification(isAnybodyInPartyHasUsedStamina);
+
+                    if (settings.StopWaitingWhenStaminaIsFull && _isTimeStopReady)
+                        StopWaitingWhenStaminaIsFull(isAnybodyInPartyHasUsedStamina);
+                }
+            }
+
+            private void HandleTravelStaminaRegeneration(bool isAnybodyInPartyHasUsedStamina)
+            {
+                if (settings.RegenStaminaWhileTravelling && isAnybodyInPartyHasUsedStamina)
+                {
+                    if (settings.ShowCurrentStaminaPercentWhileTravelling)
                         LogCurrentPartysSmithingStaminaPercent();
 
-                    if (!isAnybodyInPartyHasUsedStamina)
-                    {
-                        if (ShouldDisplayNotifications())
-                            DisplayStaminaNotification(isAnybodyInPartyHasUsedStamina);
+                    RegenerateStaminaForAllParty();
+                    isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
 
-                        if (settings.StopWaitingWhenStaminaIsFull && _isTimeStopReady)
-                            StopWaitingWhenStaminaIsFull(isAnybodyInPartyHasUsedStamina);
-                        return;
-                    }
-                }
-                else
-                {
-                    if (settings.RegenStaminaWhileTravelling && isAnybodyInPartyHasUsedStamina)
-                    {
-                        if (settings.ShowCurrentStaminaPercentWhileTravelling)
-                            LogCurrentPartysSmithingStaminaPercent();
-
-                        RegenerateStaminaForAllParty();
-                        isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
-
-                        if (ShouldDisplayNotifications() && settings.ShowNotificationsWhileTravelling && !isAnybodyInPartyHasUsedStamina)
-                            DisplayStaminaNotification(isAnybodyInPartyHasUsedStamina);
-                        return;
-                    }
+                    if (ShouldDisplayNotifications() && settings.ShowNotificationsWhileTravelling && !isAnybodyInPartyHasUsedStamina)
+                        DisplayStaminaNotification(isAnybodyInPartyHasUsedStamina);
                 }
             }
 
@@ -119,39 +124,31 @@ namespace VisibleSmithingStaminaWhileWaiting
                 return false;
             }
 
-            private static bool IsHeroHasUsedStamina()
+            private bool IsHeroHasUsedStamina()
             {
-                var craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
-                if (craftingBehavior == null)
-                    return false;
                 var maxMainHeroStamina = craftingBehavior.GetMaxHeroCraftingStamina(Hero.MainHero);
                 var currentMainHeroStamina = craftingBehavior.GetHeroCraftingStamina(Hero.MainHero);
                 return currentMainHeroStamina < maxMainHeroStamina;
             }
 
-            private static bool IsAnyCompanionInPartyHasUsedStamina()
+            private bool HasAnyHeroUsedStamina()
             {
                 var hero = Hero.MainHero;
-                if (hero == null)
-                    return false;
-                IEnumerable<Hero> companions = hero.CompanionsInParty;
-                CraftingCampaignBehavior craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
-                if (craftingBehavior == null)
-                    return false;
+                List<Hero> partyHeroes = Utilities.ListOfHeroesInParty(hero);
 
-                foreach (Hero companion in companions)
+                foreach (Hero member in partyHeroes)
                 {
-                    int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(companion);
-                    int currentStamina = craftingBehavior.GetHeroCraftingStamina(companion);
+                    int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(member);
+                    int currentStamina = craftingBehavior.GetHeroCraftingStamina(member);
                     if (currentStamina < maxStamina)
                         return true;
                 }
                 return false;
             }
 
-            private static bool IsAnybodyInPartyHasUsedStamina()
+            private bool IsAnybodyInPartyHasUsedStamina()
             {
-                if (IsHeroHasUsedStamina() || IsAnyCompanionInPartyHasUsedStamina())
+                if (IsHeroHasUsedStamina() || HasAnyHeroUsedStamina())
                     return true;
                 return false;
             }
@@ -159,21 +156,14 @@ namespace VisibleSmithingStaminaWhileWaiting
             private void RegenerateStaminaForAllParty()
             {
                 var hero = Hero.MainHero;
-                if (hero == null)
-                    return;
-                IEnumerable<Hero> companions = hero.CompanionsInParty;
-                AddStamina(hero);
-                foreach (Hero companion in companions)
-                    AddStamina(companion);
+                List<Hero> partyHeroes = Utilities.ListOfHeroesInParty(hero);
+                
+                foreach (Hero partyHero in partyHeroes)
+                    AddStamina(partyHero);
             }
 
             private void AddStamina(Hero hero)
             {
-                if (hero == null)
-                    return;
-                CraftingCampaignBehavior craftingBehavior = CampaignBehaviorBase.GetCampaignBehavior<CraftingCampaignBehavior>();
-                if (craftingBehavior == null)
-                    return;
                 int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(hero);
                 int currentStamina = craftingBehavior.GetHeroCraftingStamina(hero);
                 int smithingSkillLevel = hero.GetSkillValue(DefaultSkills.Crafting);
@@ -202,7 +192,13 @@ namespace VisibleSmithingStaminaWhileWaiting
                         return regenAmountFromSkill - hourlyRecoveryRate;
                 }
                 if (flag && !IsHeroInTown())
-                    return CalculateStaminaRegenBasedOnSkill(smithingSkillLevel);
+                {
+                    var staminaToRegen = CalculateStaminaRegenBasedOnSkill(smithingSkillLevel);
+                    if (staminaToRegen < 1)
+                        return 1;
+                    return staminaToRegen;
+                }
+                    
                 return regenStamina;
             }
 
@@ -210,8 +206,6 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             private int GetStaminaHourlyRecoveryRate(Hero hero)
             {
-                if (hero == null)
-                    return 0;
                 int num = 5 + TaleWorlds.Library.MathF.Round((float)hero.GetSkillValue(DefaultSkills.Crafting) * 0.025f);
                 if (hero.GetPerkValue(DefaultPerks.Athletics.Stamina))
                     num += TaleWorlds.Library.MathF.Round((float)num * DefaultPerks.Athletics.Stamina.PrimaryBonus);
@@ -223,16 +217,16 @@ namespace VisibleSmithingStaminaWhileWaiting
                 Hero heroWithLongestRecoveryTime = Hero.MainHero;
                 float longestRecoveryTime = CalculateRecoveryTime(Hero.MainHero);
 
-                if (IsAnyCompanionInPartyHasUsedStamina())
+                if (HasAnyHeroUsedStamina())
                 {
-                    IEnumerable<Hero> companions = Hero.MainHero.CompanionsInParty;
-                    foreach (Hero companion in companions)
+                    List<Hero> partyHeroes = Utilities.ListOfHeroesInParty(Hero.MainHero);
+                    foreach (Hero hero in partyHeroes)
                     {
-                        float recoveryTime = CalculateRecoveryTime(companion);
+                        float recoveryTime = CalculateRecoveryTime(hero);
                         if (recoveryTime > longestRecoveryTime)
                         {
                             longestRecoveryTime = recoveryTime;
-                            heroWithLongestRecoveryTime = companion;
+                            heroWithLongestRecoveryTime = hero;
                         }
                     }
                 }
@@ -243,11 +237,6 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             private float CalculateRecoveryTime(Hero hero)
             {
-                if (hero == null)
-                    return 0;
-                CraftingCampaignBehavior craftingBehavior = CampaignBehaviorBase.GetCampaignBehavior<CraftingCampaignBehavior>();
-                if (craftingBehavior == null)
-                    return 0;
                 int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(hero);
                 int currentStamina = craftingBehavior.GetHeroCraftingStamina(hero);
                 int staminaToRecover = maxStamina - currentStamina;
@@ -256,13 +245,8 @@ namespace VisibleSmithingStaminaWhileWaiting
                 return (float)staminaToRecover / recoveryRate;
             }
 
-            private static int CalculateCurrentHeroSmithingStaminaPercent(Hero hero)
+            private int CalculateCurrentHeroSmithingStaminaPercent(Hero hero)
             {
-                if (hero == null)
-                    return 0;
-                CraftingCampaignBehavior craftingBehavior = CampaignBehaviorBase.GetCampaignBehavior<CraftingCampaignBehavior>();
-                if (craftingBehavior == null)
-                    return 0;
                 int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(hero);
                 int currentStamina = craftingBehavior.GetHeroCraftingStamina(hero);
                 int percent = (currentStamina * 100) / maxStamina;
