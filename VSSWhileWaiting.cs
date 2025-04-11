@@ -24,13 +24,14 @@ namespace VisibleSmithingStaminaWhileWaiting
             private bool _isTimeStopReady = false;
 
             private readonly MCMSettings settings = AttributeGlobalSettings<MCMSettings>.Instance ?? new MCMSettings();
-            private CraftingCampaignBehavior? craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
+            private CraftingCampaignBehavior? craftingBehavior;
 
             private void OnHourlyTick()
             {
                 if (!IsHeroAbleToRegenerateStaminaAtAll())
                     return;
 
+                craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
                 bool isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
 
                 CheckAndPrepareNotification(true, isAnybodyInPartyHasUsedStamina);
