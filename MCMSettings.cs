@@ -7,25 +7,11 @@ namespace VisibleSmithingStaminaWhileWaiting
 {
     internal class MCMSettings : AttributeGlobalSettings<MCMSettings>
     {
-        public override string Id
-        {
-            get { return "VisibleSmithingStaminaWhileWaiting"; }
-        }
+        public override string Id => "VisibleSmithingStaminaWhileWaiting";
+        public override string DisplayName => new TextObject("{=EuYdW1aH89JPd}Visible Smithing Stamina While Waiting").ToString();
+        public override string FolderName => "VisibleSmithingStaminaWhileWaiting";
+        public override string FormatType => "json2";
 
-        public override string DisplayName
-        {
-            get { return new TextObject("{=EuYdW1aH89JPd}Visible Smithing Stamina While Waiting").ToString(); }
-        }
-
-        public override string FolderName
-        {
-            get { return "VisibleSmithingStaminaWhileWaiting"; }
-        }
-
-        public override string FormatType
-        {
-            get { return "json2"; }
-        }
 
         [SettingPropertyBool("{=PDnUz0EnsVJyH}Event log notification", Order = 0, RequireRestart = false, HintText = "{=3UWpkfOEaAIzL}Show smithing stamina notification in the log in the bottom-left corner of the screen.")]
         [SettingPropertyGroup("{=OcXCbctwrryDV}Select how you want your smithing stamina notifications to be shown", GroupOrder = 0)]
