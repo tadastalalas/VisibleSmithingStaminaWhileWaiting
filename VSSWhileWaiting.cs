@@ -45,7 +45,7 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             private void HandleTownStaminaRegeneration(bool isAnybodyInPartyHasUsedStamina)
             {
-                if (settings.UseSmithingSkillForStaminaRegen && isAnybodyInPartyHasUsedStamina)
+                if (isAnybodyInPartyHasUsedStamina)
                 {
                     RegenerateStaminaForAllParty();
                     isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
