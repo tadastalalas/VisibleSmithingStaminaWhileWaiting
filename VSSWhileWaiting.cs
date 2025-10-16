@@ -270,7 +270,7 @@ namespace VisibleSmithingStaminaWhileWaiting
                 if (settings.ShowMessageInTheLog)
                     InformationManager.DisplayMessage(new InformationMessage(new TextObject(message).ToString()));
                 if (settings.ShowMessageOnTheScreen)
-                    MBInformationManager.AddQuickInformation(new TextObject(message), 2000, null, "event:/ui/notification/quest_start");
+                    MBInformationManager.AddQuickInformation(new TextObject(message), 2000, null, null, "event:/ui/notification/quest_start");
                 if (settings.ShowMessageAsPopUp)
                     Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(message)));
             }
