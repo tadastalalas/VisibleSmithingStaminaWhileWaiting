@@ -143,19 +143,19 @@
 			<BrushLayer Name="lte_can_read" Sprite="lte_can_read_notification" IsHidden="true" />
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer -->
 			<BrushLayer Name="custom_world_events_announcer_autumn_map_notification" Sprite="custom_world_events_announcer_autumn_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer -->
 			<BrushLayer Name="custom_world_events_announcer_spring_map_notification" Sprite="custom_world_events_announcer_spring_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer -->
 			<BrushLayer Name="custom_world_events_announcer_summer_map_notification" Sprite="custom_world_events_announcer_summer_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer -->
 			<BrushLayer Name="custom_world_events_announcer_winter_map_notification" Sprite="custom_world_events_announcer_winter_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
 

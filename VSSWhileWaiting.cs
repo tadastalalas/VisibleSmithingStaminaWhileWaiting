@@ -32,6 +32,10 @@ namespace VisibleSmithingStaminaWhileWaiting
                     return;
 
                 craftingBehavior = Campaign.Current?.GetCampaignBehavior<CraftingCampaignBehavior>();
+
+                if (craftingBehavior == null)
+                    return;
+
                 bool isAnybodyInPartyHasUsedStamina = IsAnybodyInPartyHasUsedStamina();
 
                 CheckAndPrepareNotification(true, isAnybodyInPartyHasUsedStamina);
@@ -82,7 +86,13 @@ namespace VisibleSmithingStaminaWhileWaiting
             private static bool IsHeroAbleToRegenerateStaminaAtAll()
             {
                 var hero = Hero.MainHero;
-                return hero != null && !hero.IsDead && !hero.IsDisabled && !hero.IsFugitive && !hero.IsPrisoner && !hero.IsReleased;
+                return hero != null
+                    && hero.PartyBelongedTo != null
+                    && !hero.IsDead
+                    && !hero.IsDisabled
+                    && !hero.IsFugitive
+                    && !hero.IsPrisoner
+                    && !hero.IsReleased;
             }
 
             private void CheckAndPrepareNotification(bool flag, bool isAnybodyInPartyHasUsedStamina)
@@ -127,20 +137,31 @@ namespace VisibleSmithingStaminaWhileWaiting
 
             private bool IsHeroHasUsedStamina()
             {
-                var maxMainHeroStamina = craftingBehavior.GetMaxHeroCraftingStamina(Hero.MainHero);
-                var currentMainHeroStamina = craftingBehavior.GetHeroCraftingStamina(Hero.MainHero);
+                if (Hero.MainHero == null || craftingBehavior == null)
+                    return false;
+
+                int maxMainHeroStamina = craftingBehavior.GetMaxHeroCraftingStamina(Hero.MainHero);
+                int currentMainHeroStamina = craftingBehavior.GetHeroCraftingStamina(Hero.MainHero);
                 return currentMainHeroStamina < maxMainHeroStamina;
             }
 
             private bool HasAnyHeroUsedStamina()
             {
                 var hero = Hero.MainHero;
+
+                if (hero == null || craftingBehavior == null)
+                    return false;
+
                 List<Hero> partyHeroes = Utilities.ListOfHeroesInParty(hero);
 
                 foreach (Hero member in partyHeroes)
                 {
+                    if (member == null)
+                        continue;
+
                     int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(member);
                     int currentStamina = craftingBehavior.GetHeroCraftingStamina(member);
+
                     if (currentStamina < maxStamina)
                         return true;
                 }
@@ -157,14 +178,24 @@ namespace VisibleSmithingStaminaWhileWaiting
             private void RegenerateStaminaForAllParty()
             {
                 var hero = Hero.MainHero;
+
+                if (hero == null)
+                    return;
+
                 List<Hero> partyHeroes = Utilities.ListOfHeroesInParty(hero);
-                
+
                 foreach (Hero partyHero in partyHeroes)
-                    AddStamina(partyHero);
+                {
+                    if (partyHero != null)
+                        AddStamina(partyHero);
+                }
             }
 
             private void AddStamina(Hero hero)
             {
+                if (hero == null || craftingBehavior == null)
+                    return;
+
                 int maxStamina = craftingBehavior.GetMaxHeroCraftingStamina(hero);
                 int currentStamina = craftingBehavior.GetHeroCraftingStamina(hero);
                 int smithingSkillLevel = hero.GetSkillValue(DefaultSkills.Crafting);
@@ -272,14 +303,15 @@ namespace VisibleSmithingStaminaWhileWaiting
                 if (settings.ShowMessageOnTheScreen)
                     MBInformationManager.AddQuickInformation(new TextObject(message), 2000, null, null, "event:/ui/notification/quest_start");
                 if (settings.ShowMessageAsPopUp)
-                    Campaign.Current.CampaignInformationManager.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(message)));
+                    Campaign.Current?.CampaignInformationManager?.NewMapNoticeAdded(new CustomSmithingStaminaMapNotification(new TextObject(message)));
             }
 
             private void StopWaitingWhenStaminaIsFull(bool isAnybodyInPartyHasUsedStamina)
             {
                 PrepareTimeStopOnConditions(false, isAnybodyInPartyHasUsedStamina);
                 GameMenu.SwitchToMenu("town");
-                Campaign.Current.TimeControlMode = CampaignTimeControlMode.Stop;
+                if (Campaign.Current != null)
+                    Campaign.Current.TimeControlMode = CampaignTimeControlMode.Stop;
             }
         }
     }
