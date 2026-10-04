@@ -4,6 +4,7 @@
 		<tag language="Français" />
 	</tags>
 	<strings>
+		<string id="kq2Rz8Fb1LmwP" text="L'endurance de forge est à 100 %" />
 		<string id="EuYdW1aH89JPd" text="Endurance visible de forge pendant l'attente" />
 		<string id="Zqsbdz6MIc9Ex" text="L'endurance de forge du groupe est reconstituée" />
 		<string id="OcXCbctwrryDV" text="Sélectionnez la manière dont vous souhaitez que vos notifications d'endurance de forge soient affichées :" />
@@ -17,18 +18,18 @@
 		<string id="GK78CZFIe9Dti" text="Arrêtez d'attendre lorsque votre endurance est pleine" />
 		<string id="yOQyJJBraA767" text="Le héros arrêtera d'attendre lorsque l'endurance du héros principal atteindra 100 %." />
 		<string id="sO6sGMmSdvZQW" text="Régénérer son endurance en voyageant" />
-		<string id="Z1K0iP4UAKq6c" text="Tous les membres du groupe de héros régénéreront leur endurance de forge pendant leur voyage. 3 jours = 100 % d'endurance." />
+		<string id="Z1K0iP4UAKq6c" text="Tous les membres du groupe de héros régénéreront leur endurance de forge pendant leur voyage." />
 		<string id="6qMBxn8agWxK2" text="Afficher les notifications pendant le voyage" />
-		<string id="zCzem6NK44Yde" text="Afficher les notifications de récupération d'endurance de forge pendant que le héros voyage. L'option [Régénérer l'endurance pendant le voyage] doit être activée pour que cela fonctionne." />
+		<string id="zCzem6NK44Yde" text="Afficher les notifications de récupération d'endurance de forge pendant que le héros est hors de la ville." />
 		<string id="zdTrD1TxVpbQY" text="L'endurance du groupe est de {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Ville] Afficher le pourcentage d'endurance actuel" />
 		<string id="WtDruY7sQcxsx" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures pendant que vous attendez en ville." />
 		<string id="ErodgkpkVhxKk" text="[En voyage] Afficher le pourcentage d'endurance actuel" />
 		<string id="jLu2I19JjbY84" text="Affichez le pourcentage d'endurance de forge actuel toutes les heures lorsque vous voyagez dans le monde." />
 		<string id="s2viSnCYOMSCW" text="Régénération immersive de l'endurance" />
-		<string id="01qKs9tTnkpZk" text="Régénérez l'endurance de forge en fonction de la compétence de forge du héros.\nFormule simple : (Compétence de forge / 20) = Quantité de régénération par heure." />
+		<string id="01qKs9tTnkpZk" text="Régénérez l'endurance de forge en fonction de la compétence de forge du héros.\nFormule simple : (Compétence de forge / 20) = Quantité de régénération par heure. Remplace [Heures pour restaurer complètement l'endurance]. Dans les colonies, la régénération de base du jeu est complétée jusqu'à cette valeur." />
 		<string id="ey3zAJ91Tj1Fk" text="Des heures pour reconstituer complètement l'endurance" />
-		<string id="hkyjCW0dowCis" text="En combien d'heures un héros du groupe récupère-t-il son endurance de 0 % à 100 % ? [Par défaut : 72 heures]" />
+		<string id="hkyjCW0dowCis" text="En combien d'heures un héros du groupe récupère-t-il son endurance de 0 % à 100 % ? Ignoré lorsque [Régénération immersive de l'endurance] est activée. [Par défaut : 72 heures]" />
 		<string id="eyXXNJ2r9YjOv" text="Diviseur de régénération immersif" />
 		<string id="QnNdfiTqAmiD4" text="Un nombre d'aide pour calculer la quantité d'endurance qui sera reconstituée toutes les heures si le mode immersif est sélectionné. Plus le nombre est élevé, plus la reconstitution sera longue. [Par défaut : 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->

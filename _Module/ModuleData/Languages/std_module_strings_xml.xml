@@ -4,6 +4,7 @@
 		<tag language="English" />
 	</tags>
 	<strings>
+		<string id="kq2Rz8Fb1LmwP" text="Smithing stamina is 100%" />
 		<string id="EuYdW1aH89JPd" text="Visible Smithing Stamina While Waiting" />
 		<string id="Zqsbdz6MIc9Ex" text="Party's smithing stamina is replenished" />
 		<string id="OcXCbctwrryDV" text="Select how you want your smithing stamina notifications to be shown:" />
@@ -17,18 +18,18 @@
 		<string id="GK78CZFIe9Dti" text="Stop waiting when stamina is full" />
 		<string id="yOQyJJBraA767" text="Hero will stop waiting when main hero stamina reaches 100%." />
 		<string id="sO6sGMmSdvZQW" text="Regenerate stamina while travelling" />
-		<string id="Z1K0iP4UAKq6c" text="All hero party members will regenerate smithing stamina while travelling. 3 days = 100% stamina." />
+		<string id="Z1K0iP4UAKq6c" text="All hero party members will regenerate smithing stamina while travelling." />
 		<string id="6qMBxn8agWxK2" text="Show notifications while travelling" />
-		<string id="zCzem6NK44Yde" text="Show smithing stamina recovery notifications while hero is travelling. [Regen stamina while travelling] option must be enabled for this to work." />
+		<string id="zCzem6NK44Yde" text="Show smithing stamina recovery notifications while hero is outside of town." />
 		<string id="zdTrD1TxVpbQY" text="Party's stamina is {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Town] Show current stamina percent" />
 		<string id="WtDruY7sQcxsx" text="Show current smithing stamina percent every hour while waiting in town." />
 		<string id="ErodgkpkVhxKk" text="[Travelling] Show current stamina percent" />
 		<string id="jLu2I19JjbY84" text="Show current smithing stamina percent every hour while travelling in the world." />
 		<string id="s2viSnCYOMSCW" text="Immersive Stamina Regen" />
-		<string id="01qKs9tTnkpZk" text="Regenerate smithing stamina based on hero's smithing skill.\nSimple formula: (Smithing skill / 20) = Regeneration amount per hour." />
+		<string id="01qKs9tTnkpZk" text="Regenerate smithing stamina based on hero's smithing skill.\nSimple formula: (Smithing skill / 20) = Regeneration amount per hour. Overrides [Hours to replenish stamina fully]. In settlements the vanilla regeneration is topped up to this amount." />
 		<string id="ey3zAJ91Tj1Fk" text="Hours to replenish stamina fully" />
-		<string id="hkyjCW0dowCis" text="In how many hours any hero in party will replenish stamina from 0% to 100%. [Default: 72 hours]" />
+		<string id="hkyjCW0dowCis" text="In how many hours any hero in party will replenish stamina from 0% to 100%. Ignored when [Immersive stamina regeneration] is on. [Default: 72 hours]" />
 		<string id="eyXXNJ2r9YjOv" text="Immersive regeneration divisor" />
 		<string id="QnNdfiTqAmiD4" text="A helper number to calculate how much stamina will be replenished every hour if immersive mode is selected. Higher number = longer replenishment. [Default: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->

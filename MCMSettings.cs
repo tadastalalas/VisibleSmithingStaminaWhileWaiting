@@ -29,15 +29,15 @@ namespace VisibleSmithingStaminaWhileWaiting
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool StopWaitingWhenStaminaIsFull { get; set; } = false;
 
-        [SettingPropertyBool("{=sO6sGMmSdvZQW}Regenerate stamina while travelling", Order = 1, RequireRestart = false, HintText = "{=Z1K0iP4UAKq6c}All hero party members will regenerate smithing stamina while travelling. 3 days = 100% stamina.")]
+        [SettingPropertyBool("{=sO6sGMmSdvZQW}Regenerate stamina while travelling", Order = 1, RequireRestart = false, HintText = "{=Z1K0iP4UAKq6c}All hero party members will regenerate smithing stamina while travelling.")]
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool RegenStaminaWhileTravelling { get; set; } = true;
 
-        [SettingPropertyInteger("{=ey3zAJ91Tj1Fk}Hours to replenish stamina fully", 6, 168, "0", Order = 2, RequireRestart = false, HintText = "{=hkyjCW0dowCis}In how many hours any hero in party will replenish stamina from 0% to 100%. [Default: 72 hours]")]
+        [SettingPropertyInteger("{=ey3zAJ91Tj1Fk}Hours to replenish stamina fully", 6, 168, "0", Order = 2, RequireRestart = false, HintText = "{=hkyjCW0dowCis}In how many hours any hero in party will replenish stamina from 0% to 100%. Ignored when [Immersive stamina regeneration] is on. [Default: 72 hours]")]
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public int HoursToFullStaminaRegen { get; set; } = 72;
 
-        [SettingPropertyBool("{=6qMBxn8agWxK2}Show notifications while travelling", Order = 3, RequireRestart = false, HintText = "{=zCzem6NK44Yde}Show smithing stamina recovery notifications while hero is travelling. [Regen stamina while travelling] option must be enabled for this to work.")]
+        [SettingPropertyBool("{=6qMBxn8agWxK2}Show notifications while travelling", Order = 3, RequireRestart = false, HintText = "{=zCzem6NK44Yde}Show smithing stamina recovery notifications while hero is outside of town.")]
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool ShowNotificationsWhileTravelling { get; set; } = true;
 
@@ -49,7 +49,7 @@ namespace VisibleSmithingStaminaWhileWaiting
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool ShowCurrentStaminaPercentWhileTravelling { get; set; } = false;
 
-        [SettingPropertyBool("{=s2viSnCYOMSCW}Immersive stamina regeneration", Order = 6, RequireRestart = false, HintText = "{=01qKs9tTnkpZk}Regenerate smithing stamina based on hero's smithing skill.\nSimple formula: (Smithing skill / 20) = Regeneration amount per hour.")]
+        [SettingPropertyBool("{=s2viSnCYOMSCW}Immersive stamina regeneration", Order = 6, RequireRestart = false, HintText = "{=01qKs9tTnkpZk}Regenerate smithing stamina based on hero's smithing skill.\nSimple formula: (Smithing skill / 20) = Regeneration amount per hour. Overrides [Hours to replenish stamina fully]. In settlements the vanilla regeneration is topped up to this amount.")]
         [SettingPropertyGroup("{=2wemouR6uduxG}Additional options", GroupOrder = 1)]
         public bool UseSmithingSkillForStaminaRegen { get; set; } = true;
 

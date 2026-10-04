@@ -5,30 +5,18 @@ using TaleWorlds.Library;
 
 namespace VisibleSmithingStaminaWhileWaiting
 {
-    internal class Utilities
+    internal static class Utilities
     {
-        public static  List<Hero> ListOfHeroesInParty(Hero hero)
+        public static void FillHeroesInParty(Hero hero, List<Hero> buffer)
         {
-            List<Hero> listHeroes = new List<Hero>();
-
-            if (hero?.PartyBelongedTo?.MemberRoster == null)
-                return listHeroes;
-
-            MBList<TroopRosterElement> listTroops = hero.PartyBelongedTo.MemberRoster.GetTroopRoster();
-
-            foreach (var member in listTroops)
+            buffer.Clear();
+            MBList<TroopRosterElement>? roster = hero.PartyBelongedTo?.MemberRoster?.GetTroopRoster();
+            if (roster == null) return;
+            for (int i = 0; i < roster.Count; i++)
             {
-                if (member.Character.IsHero)
-                {
-                    var partyHero = member.Character.HeroObject;
-                    if (partyHero != null && !listHeroes.Contains(partyHero))
-                    {
-                        listHeroes.Add(partyHero);
-                    }
-                }
+                Hero? member = roster[i].Character?.HeroObject;
+                if (member != null && !buffer.Contains(member)) buffer.Add(member);
             }
-
-            return listHeroes;
         }
     }
 }

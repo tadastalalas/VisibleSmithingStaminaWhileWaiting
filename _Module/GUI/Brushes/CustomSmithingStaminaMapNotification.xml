@@ -159,6 +159,17 @@
 			<BrushLayer Name="custom_world_events_announcer_winter_map_notification" Sprite="custom_world_events_announcer_winter_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
 
+			<!-- Fourberie compatibility -->
+			<BrushLayer Name="fb_scheme_result" Sprite="SPGeneral\GameMenu\ordertroopstoattack_icon" Color="#FFC349FF" IsHidden="true" />
+			<BrushLayer Name="fb_scheme_foiled" Sprite="SPGeneral\GameMenu\ordertroopstoattack_icon" Color="#00FF10FF" IsHidden="true" />
+			<BrushLayer Name="fb_scheme_victim" Sprite="SPGeneral\GameMenu\ordertroopstoattack_icon" Color="#BC1D1DFF" IsHidden="true" />
+			<!-- ======================= -->
+
+			<!-- Arena Overhaul Redux compatibility -->
+			<BrushLayer Name="custom_arena_overhaul_grand_tournament_map_notification" Sprite="custom_arena_overhaul_grand_tournament_map_notification_sprite" IsHidden="true" />
+			<BrushLayer Name="custom_arena_overhaul_kingdom_tournament_map_notification" Sprite="custom_arena_overhaul_kingdom_tournament_map_notification_sprite" IsHidden="true" />
+			<!-- ============================= -->
+
 			<!-- Visible Smithing Stamina While Waiting (this mod) -->
 			<BrushLayer Name="custom_smithing_stamina_map_notification" Sprite="custom_smithing_stamina_map_notification_sprite" IsHidden="true" />
 			<!-- ============================= -->
@@ -356,27 +367,48 @@
 			</Style>
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer compatibility -->
 			<Style Name="custom_world_events_announcer_autumn_map_notification">
 				<BrushLayer Name="custom_world_events_announcer_autumn_map_notification" IsHidden="false" />
 			</Style>
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer compatibility -->
 			<Style Name="custom_world_events_announcer_spring_map_notification">
 				<BrushLayer Name="custom_world_events_announcer_spring_map_notification" IsHidden="false" />
 			</Style>
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer compatibility -->
 			<Style Name="custom_world_events_announcer_summer_map_notification">
 				<BrushLayer Name="custom_world_events_announcer_summer_map_notification" IsHidden="false" />
 			</Style>
 			<!-- ============================= -->
 
-			<!-- World Events Announcer (this mod) -->
+			<!-- World Events Announcer compatibility -->
 			<Style Name="custom_world_events_announcer_winter_map_notification">
 				<BrushLayer Name="custom_world_events_announcer_winter_map_notification" IsHidden="false" />
+			</Style>
+			<!-- ============================= -->
+
+			<!-- Fourberie compatibility -->
+			<Style Name="fb_scheme_result">
+				<BrushLayer Name="fb_scheme_result" IsHidden="false" />
+			</Style>
+			<Style Name="fb_scheme_victim">
+				<BrushLayer Name="fb_scheme_victim" IsHidden="false" />
+			</Style>
+			<Style Name="fb_scheme_foiled">
+				<BrushLayer Name="fb_scheme_foiled" IsHidden="false" />
+			</Style>
+			<!-- ======================= -->
+
+			<!-- Arena Overhaul compatibility -->
+			<Style Name="custom_arena_overhaul_grand_tournament_map_notification">
+				<BrushLayer Name="custom_arena_overhaul_grand_tournament_map_notification" IsHidden="false" />
+			</Style>
+			<Style Name="custom_arena_overhaul_kingdom_tournament_map_notification">
+				<BrushLayer Name="custom_arena_overhaul_kingdom_tournament_map_notification" IsHidden="false" />
 			</Style>
 			<!-- ============================= -->
 

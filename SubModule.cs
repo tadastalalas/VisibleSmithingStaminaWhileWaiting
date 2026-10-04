@@ -1,10 +1,6 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ViewModelCollection.Map.MapNotificationTypes;
-using TaleWorlds.CampaignSystem.ViewModelCollection.Map;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Localization;
@@ -22,10 +18,6 @@ namespace VisibleSmithingStaminaWhileWaiting
             harmony.PatchAll();
         }
 
-        protected override void OnSubModuleUnloaded() => base.OnSubModuleUnloaded();
-
-        protected override void OnBeforeInitialModuleScreenSetAsRoot() => base.OnBeforeInitialModuleScreenSetAsRoot();
-
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
         {
             base.OnGameStart(game, gameStarterObject);
@@ -34,17 +26,6 @@ namespace VisibleSmithingStaminaWhileWaiting
                 CampaignGameStarter campaignGameStarter = (CampaignGameStarter)gameStarterObject;
                 campaignGameStarter.AddBehavior(new VSSWhileWaiting());
             }
-        }
-
-        public override void OnGameEnd(Game game)
-        {
-            var eventField = typeof(CampaignEvents).GetField("HourlyTickEvent", BindingFlags.Static | BindingFlags.NonPublic);
-            MulticastDelegate? eventDelegate = eventField?.GetValue(null) as MulticastDelegate;
-            if (eventDelegate != null && eventDelegate.GetInvocationList().Length > 0)
-            {
-                CampaignEvents.HourlyTickEvent.ClearListeners(this);
-            }
-            base.OnGameEnd(game);
         }
     }
 
@@ -66,29 +47,8 @@ namespace VisibleSmithingStaminaWhileWaiting
     {
         public CustomSmithingStaminaMapNotification(TextObject description) : base(description) { }
 
-        public override TextObject TitleText
-        {
-            get { return new TextObject("Smithing stamina is 100%"); }
-        }
-
-        public override string SoundEventPath
-        {
-            get { return "event:/ui/notification/kingdom_decision"; }
-        }
-    }
-
-
-    [HarmonyPatch(typeof(MapNotificationVM), "PopulateTypeDictionary")]
-    internal class PopulateNotificationsPatch
-    {
-        private static void Postfix(MapNotificationVM __instance)
-        {
-            var fieldInfo = __instance.GetType().GetField("_itemConstructors", BindingFlags.Instance | BindingFlags.NonPublic);
-            if (fieldInfo?.GetValue(__instance) is Dictionary<Type, Type> dic)
-            {
-                dic.Add(typeof(CustomSmithingStaminaMapNotification), typeof(CustomSmithingStaminaMapNotificationVM));
-            }
-        }
+        public override TextObject TitleText => new("{=kq2Rz8Fb1LmwP}Smithing stamina is 100%");
+        public override string SoundEventPath => "event:/ui/notification/kingdom_decision";
     }
 
     public class CustomSaveDefiner : SaveableTypeDefiner

@@ -4,6 +4,7 @@
 		<tag language="Deutsch" />
 	</tags>
 	<strings>
+		<string id="kq2Rz8Fb1LmwP" text="Schmiedeausdauer ist bei 100 %" />
 		<string id="EuYdW1aH89JPd" text="Sichtbare Schmiedeausdauer während des Wartens" />
 		<string id="Zqsbdz6MIc9Ex" text="Die Schmiedekunst-Ausdauer der Gruppe wird wiederhergestellt" />
 		<string id="OcXCbctwrryDV" text="Wählen Sie aus, wie Ihre Benachrichtigungen zur Ausdauer beim Schmieden angezeigt werden sollen:" />
@@ -17,18 +18,18 @@
 		<string id="GK78CZFIe9Dti" text="Hören Sie auf zu warten, wenn die Ausdauer voll ist" />
 		<string id="yOQyJJBraA767" text="Der Held hört auf zu warten, wenn die Ausdauer des Haupthelden 100 % erreicht." />
 		<string id="sO6sGMmSdvZQW" text="Regeneriere Ausdauer auf Reisen" />
-		<string id="Z1K0iP4UAKq6c" text="Die Ausdauer aller Mitglieder der Heldengruppe im Schmiedehandwerk regeneriert sich während der Reise. 3 Tage = 100 % Ausdauer." />
+		<string id="Z1K0iP4UAKq6c" text="Die Schmiedeausdauer aller Mitglieder der Heldengruppe regeneriert sich während der Reise." />
 		<string id="6qMBxn8agWxK2" text="Benachrichtigungen während der Reise anzeigen" />
-		<string id="zCzem6NK44Yde" text="Zeigt Benachrichtigungen zur Wiederherstellung der Ausdauer beim Schmieden an, während der Held unterwegs ist. Die Option [Ausdauer während der Reise regenerieren] muss aktiviert sein, damit dies funktioniert." />
+		<string id="zCzem6NK44Yde" text="Zeigt Benachrichtigungen zur Wiederherstellung der Schmiedeausdauer an, während der Held sich außerhalb der Stadt befindet." />
 		<string id="zdTrD1TxVpbQY" text="Die Ausdauer der Gruppe beträgt {percent} %" />
 		<string id="6oTamV4M8XdZO" text="[Stadt] Aktuelle Ausdauer in Prozent anzeigen" />
 		<string id="WtDruY7sQcxsx" text="Zeigt stündlich den aktuellen Prozentsatz der Ausdauer im Schmiedehandwerk an, während Sie in der Stadt warten." />
 		<string id="ErodgkpkVhxKk" text="[Reisen] Aktuelle Ausdauer in Prozent anzeigen" />
 		<string id="jLu2I19JjbY84" text="Zeigt stündlich den aktuellen Prozentsatz der Schmiedeausdauer an, während Sie durch die Welt reisen." />
 		<string id="s2viSnCYOMSCW" text="Immersive Ausdauerregeneration" />
-		<string id="01qKs9tTnkpZk" text="Regeneriert Schmiedeausdauer basierend auf der Schmiedefertigkeit des Helden.\nEinfache Formel: (Schmiedefertigkeit / 20) = Regenerationsmenge pro Stunde." />
+		<string id="01qKs9tTnkpZk" text="Regeneriert Schmiedeausdauer basierend auf der Schmiedefertigkeit des Helden.\nEinfache Formel: (Schmiedefertigkeit / 20) = Regenerationsmenge pro Stunde. Überschreibt [Stunden bis zur vollständigen Regeneration]. In Siedlungen wird die Vanilla-Regeneration auf diesen Wert aufgefüllt." />
 		<string id="ey3zAJ91Tj1Fk" text="Stunden, um die Ausdauer vollständig wiederherzustellen" />
-		<string id="hkyjCW0dowCis" text="In wie vielen Stunden wird ein Held in der Gruppe seine Ausdauer von 0 % auf 100 % regenerieren? [Standard: 72 Stunden]" />
+		<string id="hkyjCW0dowCis" text="In wie vielen Stunden wird ein Held in der Gruppe seine Ausdauer von 0 % auf 100 % regenerieren? Wird ignoriert, wenn [Immersive Ausdauerregeneration] aktiviert ist. [Standard: 72 Stunden]" />
 		<string id="eyXXNJ2r9YjOv" text="Immersiver Regenerationsteiler" />
 		<string id="QnNdfiTqAmiD4" text="Eine Hilfszahl zur Berechnung, wie viel Ausdauer jede Stunde erneuert wird, wenn der Immersionsmodus ausgewählt ist. Höhere Zahl = längere Erneuerung. [Standard: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->

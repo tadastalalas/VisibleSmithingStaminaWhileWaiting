@@ -4,6 +4,7 @@
 		<tag language="Português (BR)" />
 	</tags>
 	<strings>
+		<string id="kq2Rz8Fb1LmwP" text="A resistência de ferraria está em 100%" />
 		<string id="EuYdW1aH89JPd" text="Vigor de ferraria visível enquanto espera" />
 		<string id="Zqsbdz6MIc9Ex" text="A resistência de ferreiro do grupo é reabastecida" />
 		<string id="OcXCbctwrryDV" text="Selecione como você quer que suas notificações de resistência de ferreiro sejam mostradas:" />
@@ -17,18 +18,18 @@
 		<string id="GK78CZFIe9Dti" text="Pare de esperar quando a resistência estiver cheia" />
 		<string id="yOQyJJBraA767" text="O herói parará de esperar quando a resistência do herói principal atingir 100%." />
 		<string id="sO6sGMmSdvZQW" text="Regenera a resistência enquanto viaja" />
-		<string id="Z1K0iP4UAKq6c" text="Todos os membros do grupo de heróis regenerarão a resistência de ferraria enquanto viajam. 3 dias = 100% de resistência." />
+		<string id="Z1K0iP4UAKq6c" text="Todos os membros do grupo de heróis regenerarão a resistência de ferraria enquanto viajam." />
 		<string id="6qMBxn8agWxK2" text="Mostrar notificações enquanto viaja" />
-		<string id="zCzem6NK44Yde" text="Exibir notificações de recuperação de resistência de ferreiro enquanto o herói estiver viajando. A opção [Regenerar resistência enquanto viaja] deve estar habilitada para que isso funcione." />
+		<string id="zCzem6NK44Yde" text="Exibir notificações de recuperação de resistência de ferraria enquanto o herói estiver fora da cidade." />
 		<string id="zdTrD1TxVpbQY" text="A resistência do grupo é {percent}%" />
 		<string id="6oTamV4M8XdZO" text="[Cidade] Mostrar porcentagem de resistência atual" />
 		<string id="WtDruY7sQcxsx" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto espera na cidade." />
 		<string id="ErodgkpkVhxKk" text="[Viajando] Mostrar porcentagem de resistência atual" />
 		<string id="jLu2I19JjbY84" text="Exibe a porcentagem atual de resistência de ferreiro a cada hora enquanto viaja pelo mundo." />
 		<string id="s2viSnCYOMSCW" text="Regeneração de Stamina Imersiva" />
-		<string id="01qKs9tTnkpZk" text="Regenera a resistência de ferreiro com base na habilidade de ferreiro do herói.\nFórmula simples: (Habilidade de ferreiro / 20) = Quantidade de regeneração por hora." />
+		<string id="01qKs9tTnkpZk" text="Regenera a resistência de ferraria com base na habilidade de ferraria do herói.\nFórmula simples: (Habilidade de ferraria / 20) = Quantidade de regeneração por hora. Substitui [Horas para repor a resistência totalmente]. Em assentamentos, a regeneração padrão do jogo é complementada até esse valor." />
 		<string id="ey3zAJ91Tj1Fk" text="Horas para repor totalmente a resistência" />
-		<string id="hkyjCW0dowCis" text="Em quantas horas qualquer herói no grupo irá repor a resistência de 0% a 100%. [Padrão: 72 horas]" />
+		<string id="hkyjCW0dowCis" text="Em quantas horas qualquer herói no grupo irá repor a resistência de 0% a 100%. Ignorado quando [Regeneração imersiva de resistência] está ativada. [Padrão: 72 horas]" />
 		<string id="eyXXNJ2r9YjOv" text="Divisor de regeneração imersiva" />
 		<string id="QnNdfiTqAmiD4" text="Um número auxiliar para calcular quanta stamina será reposta a cada hora se o modo imersivo for selecionado. Número maior = reposição mais longa. [Padrão: 20]" />
 		<string id="1ATU24WRMck0h" text="" />		<!-- {=1ATU24WRMck0h} -->
